@@ -52,6 +52,21 @@ then
     yes | ssh-keygen -t rsa -b 4096 -N "" -f "$ssh_key"
     rm -r ${ssh_controlmasters_dir:?}/* 2>/dev/null # close all connections, to prevent any possible weird behaviour
     ssh-add # Start using the new key
+
+    # prompt for continuing
+    while true
+    do
+        exec < /dev/tty
+        read -p $'\033[1m[networking]\033[0m: Your ssh key has been updated. If you use SSH for git, update your public key '\
+'on the hosts before continuing. Continue? ' -n 1 -r
+        exec <&-
+        echo # (optional) move to a new line
+        if [[ $REPLY =~ ^[Yy]$ ]]
+        then
+            break
+        fi
+    echo -e "\033[1mPlease answer with 'y' to continue\033[0m"
+    done
 fi
 
 # Enable persistent connection multiplexing
