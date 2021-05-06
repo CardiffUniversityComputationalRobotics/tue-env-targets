@@ -2,4 +2,4 @@
   source:
     type: git
     url: https://github.com/tue-robotics/text_to_speech.git
-    sub-dir: text_to_speech
+    sub-dir: text_to_speech_msgs
