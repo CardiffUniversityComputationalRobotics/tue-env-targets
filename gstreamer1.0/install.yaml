@@ -1,8 +1,0 @@
-- type: system
-  name: gstreamer1.0-tools
-
-- type: system
-  name: libgstreamer1.0-0
-
-- type: system
-  name: gir1.2-gstreamer-1.0

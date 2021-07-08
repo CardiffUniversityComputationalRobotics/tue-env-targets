@@ -1,8 +1,0 @@
-- type: target
-  name: gazebo-setup
-
-- type: system
-  default:
-    name: libsdformat6-dev
-  xenial:
-    name: libsdformat4-dev

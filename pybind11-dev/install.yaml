@@ -1,5 +1,0 @@
-- type: system
-  default:
-    name: pybind11-dev
-  xenial:
-    name: null # No release on xenial
