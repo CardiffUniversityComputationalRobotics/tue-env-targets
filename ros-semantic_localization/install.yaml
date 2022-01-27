@@ -1,0 +1,5 @@
+- type: ros
+  source:
+    type: git
+    url: https://github.com/MatthijsBurgh/semantic_localization.git
+    sub-dir: semantic_localization
