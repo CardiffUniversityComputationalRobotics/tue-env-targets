@@ -2,7 +2,7 @@
   name: ros-setup
 
 - type: system
-  name: python3-catkin-tools
+  name: python3-catkin-tools<=0.8.2
 
 - type: pip
   name: psutil
