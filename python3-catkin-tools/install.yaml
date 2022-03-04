@@ -1,8 +1,11 @@
-- type: target
-  name: ros-setup
+# - type: target
+#   name: ros-setup
 
-- type: system
-  name: python3-catkin-tools<=0.8.2
+# - type: system # We can go back to system install, once catkin_tools_document is compatible with >=0.8.3
+#   name: python3-catkin-tools
+
+- type: pip
+  name: catkin-tools<=0.8.2
 
 - type: pip
   name: psutil
