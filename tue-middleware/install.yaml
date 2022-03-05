@@ -3,7 +3,7 @@
   name: tue-common
 
 - type: target
-  name: ros-diagnostic_aggregator
+  name: diagnostic_aggregator
 
 - type: target
   name: ros-node_alive
@@ -17,7 +17,7 @@
 
 # SLAM
 - type: target
-  name: ros-gmapping
+  name: gmapping
 
 # World model
 - type: target
