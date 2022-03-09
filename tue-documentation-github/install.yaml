@@ -133,11 +133,11 @@
 - type: target
   name: ros-image_recognition
 - type: target
+  name: ros-image_recognition_age_gender
+- type: target
   name: ros-image_recognition_analysis
 - type: target
   name: ros-image_recognition_color_extractor
-- type: target
-  name: ros-image_recognition_keras
 - type: target
   name: ros-image_recognition_msgs
 - type: target
