@@ -5,7 +5,7 @@
 #   name: python3-catkin-tools
 
 - type: pip
-  name: catkin-tools<=0.8.2
+  name: catkin-tools>=0.8.4
 
 - type: pip
   name: psutil
