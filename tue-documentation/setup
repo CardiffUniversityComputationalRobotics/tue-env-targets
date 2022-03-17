@@ -21,7 +21,7 @@ function tue-make-documentation
             ;;
         '')
             catkin config --init --mkdirs --workspace "$TUE_SYSTEM_DIR" --extend /opt/ros/"$TUE_ROS_DISTRO" -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_ENABLE_TESTING=OFF
-            catkin build --workspace "$TUE_SYSTEM_DIR" "$@"
+            catkin document --workspace "$TUE_SYSTEM_DIR" "$@"
             touch "$TUE_SYSTEM_DIR"/devel/.catkin # hack to allow overlaying to this ws while being empty
             ;;
         *)
