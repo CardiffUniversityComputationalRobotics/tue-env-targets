@@ -2,7 +2,7 @@
   noetic:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/pepper_meshes.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/pepper_meshes.git
   default:
     source:
       type: system
