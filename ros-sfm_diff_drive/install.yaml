@@ -2,10 +2,10 @@
   noetic:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/sfm_diff_drive.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/sfm_diff_drive.git
       version: noetic-devel
 
   default:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/sfm_diff_drive.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/sfm_diff_drive.git
