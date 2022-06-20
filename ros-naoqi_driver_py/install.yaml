@@ -2,7 +2,7 @@
   noetic:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/naoqi_bridge.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/naoqi_bridge.git
       sub-dir: naoqi_driver_py
       version: noetic-devel
   default:
