@@ -2,7 +2,7 @@
   noetic:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/camera_info_manager_py.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/camera_info_manager_py.git
       version: noetic-devel
   default:
     source:
