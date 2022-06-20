@@ -1,4 +1,4 @@
 - type: ros
   source:
     type: git
-    url: git@github.com:CardiffUniversityComputationalRobotics1998/gazebo_model_velocity_plugin.git
+    url: git@github.com:CardiffUniversityComputationalRobotics/gazebo_model_velocity_plugin.git
