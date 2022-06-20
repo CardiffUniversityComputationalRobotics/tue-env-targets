@@ -2,7 +2,7 @@
   noetic:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/pepper_virtual.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/pepper_virtual.git
       sub-dir: pepper_gazebo_plugin
       version: noetic-devel
   default:
