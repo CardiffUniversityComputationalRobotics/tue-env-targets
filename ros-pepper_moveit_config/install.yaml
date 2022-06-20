@@ -1,4 +1,4 @@
 - type: ros
   source:
     type: git
-    url: git@github.com:CardiffUniversityComputationalRobotics1998/pepper_moveit_config.git
+    url: git@github.com:CardiffUniversityComputationalRobotics/pepper_moveit_config.git
