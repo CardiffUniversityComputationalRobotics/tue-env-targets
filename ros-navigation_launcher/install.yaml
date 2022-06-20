@@ -1,5 +1,5 @@
 - type: ros
   source:
     type: git
-    url: git@github.com:CardiffUniversityComputationalRobotics1998/HoloLensNavigationForRobots.git
+    url: git@github.com:CardiffUniversityComputationalRobotics/HoloLensNavigationForRobots.git
     sub-dir: linux/navigation_launcher
