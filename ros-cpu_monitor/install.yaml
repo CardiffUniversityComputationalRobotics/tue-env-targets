@@ -2,7 +2,7 @@
   noetic:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/cpu_monitor.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cpu_monitor.git
       version: noetic-devel
   default:
     source:
