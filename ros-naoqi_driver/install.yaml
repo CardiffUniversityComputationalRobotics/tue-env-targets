@@ -1,4 +1,4 @@
 - type: ros
   source:
     type: git
-    url: git@github.com:CardiffUniversityComputationalRobotics1998/naoqi_driver.git
+    url: git@github.com:CardiffUniversityComputationalRobotics/naoqi_driver.git
