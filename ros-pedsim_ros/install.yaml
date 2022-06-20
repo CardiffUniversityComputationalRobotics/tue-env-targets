@@ -2,9 +2,9 @@
   noetic:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/pedsim_ros.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
       version: noetic-devel
   default:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics1998/pedsim_ros.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
