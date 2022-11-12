@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:pal-robotics/custom_end_effector.git
+      sub-dir: moveit_custom_dual_config
