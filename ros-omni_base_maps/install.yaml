@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:pal-robotics/omni_base_navigation.git
+      sub-dir: omni_base_maps
