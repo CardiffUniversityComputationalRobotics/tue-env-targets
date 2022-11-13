@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:pal-robotics/pal_wsg_gripper.git
+      sub-dir: pal_wsg_gripper_controller_configuration
