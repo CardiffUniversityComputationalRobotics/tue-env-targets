@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:pal-robotics/play_motion.git
+      sub-dir: play_motion_msgs
