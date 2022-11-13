@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:pal-robotics/pal_gripper.git
+      sub-dir: pal_gripper_description
