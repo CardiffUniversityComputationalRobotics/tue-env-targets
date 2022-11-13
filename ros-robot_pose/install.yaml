@@ -1,0 +1,4 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:pal-robotics/robot_pose.git
