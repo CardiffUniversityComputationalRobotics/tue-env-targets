@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:pal-robotics/pmb2_simulation.git
+      sub-dir: pmb2_gazebo
