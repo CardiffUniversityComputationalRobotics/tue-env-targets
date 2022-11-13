@@ -2,4 +2,4 @@
   source:
       type: git
       url: git@github.com:pal-robotics/pal_robotiq_gripper.git
-      sub-dir: pal_robotiq_epick_gripper
+      sub-dir: pal_robotiq_epick_gripper/pal_robotiq_epick_gripper
