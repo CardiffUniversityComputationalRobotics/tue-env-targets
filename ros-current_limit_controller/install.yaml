@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:pal-robotics/pal_ros_controllers.git
+      sub-dir: current_limit_controller
