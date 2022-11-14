@@ -1,0 +1,6 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
+      sub-dir: tests_tiago/test_tiago_common_bringup
+
