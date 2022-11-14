@@ -1,5 +1,5 @@
 - type: ros
   source:
       type: git
-      url: git@github.com:pal-robotics/tiago_robot.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/tiago_robot.git
       sub-dir: tiago_bringup
