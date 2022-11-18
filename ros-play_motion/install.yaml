@@ -1,5 +1,5 @@
 - type: ros
   source:
       type: git
-      url: git@github.com:pal-robotics/play_motion.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/play_motion.git
       sub-dir: play_motion
