@@ -1,4 +1,4 @@
 - type: ros
   source:
-    type: system
-    name: moveit-python
+      type: git
+      url: https://github.com/mikeferguson/moveit_python.git

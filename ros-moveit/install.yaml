@@ -1,2 +1,5 @@
-- type: target
-  name: ros-moveit_core
+- type: ros
+  source:
+      type: git
+      url: git@github.com:ros-planning/moveit.git
+      version: noetic-devel
