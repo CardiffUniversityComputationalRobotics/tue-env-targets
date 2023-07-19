@@ -1,5 +1,5 @@
 - type: ros
   source:
       type: git
-      url: git@github.com:ros-planning/moveit_visual_tools.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/moveit_visual_tools.git
       version: noetic-devel

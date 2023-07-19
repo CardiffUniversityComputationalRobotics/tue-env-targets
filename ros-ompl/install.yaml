@@ -1,5 +1,5 @@
 - type: ros
   source:
       type: git
-      url: git@github.com:KavrakiLab/catkin_ompl.git
-      version: master
+      url: git@github.com:ompl/ompl.git
+      version: tags/1.5.0

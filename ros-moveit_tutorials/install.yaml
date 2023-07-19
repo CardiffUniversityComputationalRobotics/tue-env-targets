@@ -1,6 +1,6 @@
 - type: ros
   source:
       type: git
-      url: https://github.com/ros-planning/moveit_tutorials.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/moveit_tutorials.git
       version: master
 
