@@ -1,5 +1,4 @@
 - type: ros
   source:
-      type: git
-      url: git@github.com:ros-planning/srdfdom.git
-      version: melodic-devel
+      type: system
+      name: srdfdom
