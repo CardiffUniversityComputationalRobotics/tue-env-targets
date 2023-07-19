@@ -9,4 +9,5 @@ then
     cucr-install-target ros-rosparam_shortcuts
     cucr-install-target ros-eigen_stl_containers
     cucr-install-target ros-geometric_shapes
+    cucr-install-target ros-srdfdom
 fi
