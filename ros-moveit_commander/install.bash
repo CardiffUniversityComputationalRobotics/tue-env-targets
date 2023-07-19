@@ -5,4 +5,6 @@ then
     cucr-install-target ros-moveit_resources
     cucr-install-target ros-ompl
     cucr-install-target ros-ruckig
+    cucr-install-target ros-tf2_eigen
+    cucr-install-target ros-rosparam_shortcuts
 fi
