@@ -8,4 +8,5 @@ then
     cucr-install-target ros-tf2_eigen
     cucr-install-target ros-rosparam_shortcuts
     cucr-install-target ros-eigen_stl_containers
+    cucr-install-target ros-geometric_shapes
 fi
