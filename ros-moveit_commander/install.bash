@@ -10,4 +10,5 @@ then
     cucr-install-target ros-eigen_stl_containers
     cucr-install-target ros-geometric_shapes
     cucr-install-target ros-srdfdom
+    cucr-install-target ros-pybind11-catkin
 fi
