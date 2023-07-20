@@ -11,4 +11,6 @@ then
     cucr-install-target ros-geometric_shapes
     cucr-install-target ros-srdfdom
     cucr-install-target ros-pybind11-catkin
+    cucr-install-target ros-warehouse_ros
+    cucr-install-target libglew-dev
 fi
