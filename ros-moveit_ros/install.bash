@@ -14,4 +14,5 @@ then
     cucr-install-target ros-warehouse_ros
     cucr-install-target libglew-dev
     cucr-install-target ros-eigenpy
+    cucr-install-target ros-cv_bridge
 fi
