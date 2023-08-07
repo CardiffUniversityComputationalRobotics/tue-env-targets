@@ -2,3 +2,4 @@
   source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit_msgs.git
+      version: goal_regions
