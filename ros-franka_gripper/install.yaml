@@ -1,6 +1,6 @@
 - type: ros
   source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/franka_ros.git
+      url: git@github.com:frankaemika/franka_ros.git
       sub-dir: franka_gripper
-      version: noetic-devel
+      version: 0.10.0
