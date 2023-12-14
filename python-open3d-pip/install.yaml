@@ -1,2 +1,2 @@
-- type: pip
+- type: pip3
   name: open3d
