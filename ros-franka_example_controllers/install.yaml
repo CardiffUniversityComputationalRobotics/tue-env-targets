@@ -1,6 +1,4 @@
 - type: ros
   source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/franka_ros.git
-      sub-dir: franka_example_controllers
-      version: noetic-devel
+      type: system
+      name: franka-example-controllers

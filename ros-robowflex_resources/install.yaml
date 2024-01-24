@@ -1,4 +1,4 @@
 - type: ros
   source:
       type: git
-      url: git@github.com:KavrakiLab/robowflex_resources.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/robowflex_resources.git
