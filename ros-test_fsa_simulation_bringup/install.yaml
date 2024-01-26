@@ -2,4 +2,4 @@
   source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/shared_autonomy_manipulator.git
-
+      sub-dir: test_fsa_simulation_bringup
