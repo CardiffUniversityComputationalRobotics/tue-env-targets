@@ -2,4 +2,4 @@
   source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/panda_moveit_config.git
-      version: noetic-devel-ompl-goalregions
+      version: noetic-devel-ompl-agr
