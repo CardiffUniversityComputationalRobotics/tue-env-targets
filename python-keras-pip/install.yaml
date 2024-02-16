@@ -1,2 +1,2 @@
 - type: pip
-  name: keras<2.4
+  name: keras

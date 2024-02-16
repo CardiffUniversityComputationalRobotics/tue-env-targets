@@ -1,4 +1,0 @@
-#! /usr/bin/env bash
-
-# shellcheck disable=SC1090
-source ~/src/kaldi_speech/setup.bash

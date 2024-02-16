@@ -1,8 +1,5 @@
 #! /usr/bin/env bash
 
-# gitsu is installed as a ruby gem
-hash git-su 2> /dev/null || sudo gem install gitsu
-
 gitsu_file=~/.gitsu
 # install the authors file
 if [ -L $gitsu_file ]

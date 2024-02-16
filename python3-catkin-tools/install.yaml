@@ -1,11 +1,11 @@
 - type: target
-  name: ros-setup
-
-- type: system
-  name: python3-osrf-pycommon
+  name: ros1-setup
 
 - type: system
   name: python3-catkin-tools
 
 - type: pip
   name: psutil
+
+- type: target
+  name: python3-nose

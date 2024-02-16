@@ -1,3 +1,5 @@
+- type: target
+  name: git-setup
 - type: system
   name: git
 - type: system

@@ -1,5 +1,5 @@
 - type: target
   name: git
 
-- type: system-now
-  name: ruby
+- type: gem
+  name: gitsu

@@ -1,8 +1,0 @@
-- type: target
-  name: hero1-common
-
-- type: target
-  name: hero
-
-- type: target-now
-  name: chrony

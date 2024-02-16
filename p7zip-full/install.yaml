@@ -1,2 +1,4 @@
 - type: system
   name: p7zip-full
+- type: system
+  name: p7zip-rar

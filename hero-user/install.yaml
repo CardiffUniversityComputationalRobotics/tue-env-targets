@@ -1,8 +1,0 @@
-- type: target
-  name: cucr-common
-
-- type: target
-  name: robot-user
-
-- type: target
-  name: hero-demo-user

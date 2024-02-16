@@ -1,14 +1,20 @@
 - type: target-now
-  name: python-numpy
+  name: python3-numpy
 
 - type: target-now
-  name: python-pandas
+  name: python3-pandas
 
 - type: target-now
-  name: python-scipy
+  name: python3-scipy
 
 - type: target-now
-  name: python-skimage
+  name: python3-skimage
 
 - type: target-now
-  name: python-sklearn
+  name: python3-sklearn
+
+- type: target-now
+  name: python3-opencv
+
+- type: target-now
+  name: python-dlib

@@ -1,2 +1,2 @@
-- type: system
-  name: ruby-facets
+- type: gem
+  name: facets

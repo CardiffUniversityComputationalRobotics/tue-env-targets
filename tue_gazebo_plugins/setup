@@ -1,7 +1,0 @@
-#! /usr/bin/env bash
-
-export GAZEBO_PLUGIN_PATH=~/ros/$CUCR_ROS_DISTRO/system/devel/lib:$GAZEBO_PLUGIN_PATH
-
-export GAZEBO_MODEL_PATH=~/ros/$CUCR_ROS_DISTRO/system/src/cucr_gazebo_models/database:$GAZEBO_MODEL_PATH
-
-export GAZEBO_RESOURCE_PATH=~/ros/$CUCR_ROS_DISTRO/system/src/cucr_gazebo_models/database:$GAZEBO_RESOURCE_PATH

@@ -1,8 +1,0 @@
-- type: target
-  name: robot
-
-- type: target
-  name: hero-demo
-
-- type: target
-  name: hero-user

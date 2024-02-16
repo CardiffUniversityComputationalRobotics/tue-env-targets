@@ -1,0 +1,5 @@
+- type: target
+  name: freecad-setup
+
+- type: system
+  name: freecad

@@ -1,0 +1,9 @@
+- type: system
+  default:
+    name: null
+  bionic:
+    name: libpcl-common1.8
+  focal:
+    name: libpcl-common1.10
+  jammy:
+    name: libpcl-common1.12

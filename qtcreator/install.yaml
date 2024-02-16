@@ -1,0 +1,4 @@
+- type: system-now
+  name: libxcb-cursor0
+- type: system-now
+  name: libxcb-xinerama0
