@@ -1,0 +1,7 @@
+# [TEMP] Needed because of reportlab-4.0, dep of xhtml2pdf.
+# See https://github.com/pygobject/pycairo/issues/319 to see when to delete
+- type: system
+  name: libcairo2-dev
+
+- type: pip
+  name: xhtml2pdf

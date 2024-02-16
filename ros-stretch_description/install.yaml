@@ -3,4 +3,4 @@
       type: git
       url: git@github.com:hello-robot/stretch_ros.git
       sub-dir: stretch_description
-      version: master
+      version: noetic

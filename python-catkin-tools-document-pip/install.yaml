@@ -1,2 +1,6 @@
 - type: pip
-  name: catkin-tools-document>=0.2.0
+  name: catkin-tools-document>=0.3.0
+
+# [TEMP] Needed with new twisted version, hope to change catkin, so it isn't needed anymore
+- type: pip
+  name: setuptools>=62,<68

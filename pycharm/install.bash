@@ -8,3 +8,6 @@ then
 else
     cucr-install-debug "Pycharm was not installed by apt"
 fi
+
+# Shortcut
+cucr-install-cp pycharm-community_pycharm-community.desktop ~/.local/share/applications/pycharm-community_pycharm-community.desktop

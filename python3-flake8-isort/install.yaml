@@ -1,0 +1,2 @@
+- type: pip
+  name: flake8-isort

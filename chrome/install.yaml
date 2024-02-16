@@ -1,0 +1,5 @@
+- type: target
+  name: chrome-setup
+
+- type: system
+  name: google-chrome-stable

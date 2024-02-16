@@ -1,0 +1,12 @@
+[Desktop Entry]
+X-SnapInstanceName=clion
+Version=1.0
+Type=Application
+Name=CLion
+Icon=/snap/clion/current/bin/clion.png
+Exec=env BAMF_DESKTOP_FILE_HINT=~/.local/applications/clion_clion.desktop bash -c "shopt -s expand_aliases && source ~/.cucr/setup.bash && clion %F"
+Comment=A cross-platform IDE for C and C++
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-clion
+StartupNotify=true

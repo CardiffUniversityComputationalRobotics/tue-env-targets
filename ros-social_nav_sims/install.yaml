@@ -1,0 +1,4 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/social_nav_sims.git

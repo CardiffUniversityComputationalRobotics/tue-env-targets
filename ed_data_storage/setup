@@ -1,3 +1,0 @@
-#! /usr/bin/env bash
-
-export ED_PLUGIN_PATH=~/ros/$CUCR_ROS_DISTRO/dev/devel/lib:~/ros/$CUCR_ROS_DISTRO/system/devel/lib

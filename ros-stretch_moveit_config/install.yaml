@@ -3,3 +3,4 @@
     type: git
     url: git@github.com:cpaxton/stretch_ros.git
     sub-dir: stretch_moveit_config
+    version: autodock/aruco

@@ -1,5 +1,0 @@
-- type: target
-  name: python-catkin-tools-document-pip
-
-- type: target
-  name: python-sphinx-rtd-theme-pip

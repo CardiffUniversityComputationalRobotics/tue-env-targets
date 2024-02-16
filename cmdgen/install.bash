@@ -26,7 +26,7 @@ then
 fi
 
 # cucr-install-git will decide if clone or pull is needed
-cucr-install-git $github_url "$dest"
+cucr-install-git $github_url --target-dir="$dest"
 
 # make if needed
 # shellcheck disable=SC2164

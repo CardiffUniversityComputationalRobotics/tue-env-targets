@@ -5,7 +5,7 @@
   name: pybind11
 
 - type: target
-  name: python-pkgconfig
+  name: python-pkgconfig-pip
 
 - type: target
   name: python-future

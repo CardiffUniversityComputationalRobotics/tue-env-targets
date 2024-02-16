@@ -1,4 +1,0 @@
-#! /usr/bin/env bash
-
-alias hero-display-local='NO_FULLSCREEN=1 hero_display localhost'
-alias hero-display='NO_FULLSCREEN=1 hero_display hero1.local'

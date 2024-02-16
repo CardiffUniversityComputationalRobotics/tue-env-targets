@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+# Enable tab completion
+# shellcheck disable=SC1091
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash

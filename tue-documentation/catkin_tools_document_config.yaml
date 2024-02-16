@@ -1,4 +1,0 @@
-html_theme: sphinx_rtd_theme
-project: cucr-robotics
-copyright: Tech United Eindhoven
-html_logo: ../../../.env/targets/cucr-documentation/techunited.png
