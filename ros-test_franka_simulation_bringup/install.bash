@@ -25,3 +25,4 @@ then
 	source ~/.bashrc
 	pip3 install .
 fi
+

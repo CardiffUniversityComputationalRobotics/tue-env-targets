@@ -1,4 +1,5 @@
 - type: ros
   source:
-    type: system
-    name: moveit-visual-tools
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/moveit_visual_tools.git
+      version: noetic-devel
