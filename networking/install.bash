@@ -13,7 +13,7 @@ fi
 # Prevent resolving to ipv6 addresses. We're not ready for that yet
 if grep -q 'use-ipv6=yes' /etc/avahi/avahi-daemon.conf
 then
-    echo "Disabling ipv6 in /etc/avahi/avahi-daemon.conf"
+    cucr-install-echo "Disabling ipv6 in /etc/avahi/avahi-daemon.conf"
     sudo sed -i 's/use-ipv6=yes/use-ipv6=no/g' /etc/avahi/avahi-daemon.conf
 fi
 

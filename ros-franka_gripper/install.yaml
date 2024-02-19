@@ -1,4 +1,4 @@
 - type: ros
   source:
-      type: system
-      name: franka-gripper
+    type: system
+    name: franka-gripper

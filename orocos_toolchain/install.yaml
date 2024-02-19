@@ -5,6 +5,6 @@
 - type: ros
   source:
     type: git
-    url: git@github.com:orocos-toolchain/orocos_toolchain.git
+    url: https://github.com/orocos-toolchain/orocos_toolchain.git
     sub-dir: orocos_toolchain
     version: toolchain-2.9

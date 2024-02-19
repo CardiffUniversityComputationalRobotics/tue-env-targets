@@ -2,7 +2,7 @@
   name: ppa:graphics-drivers/ppa
 
 - type: system
-  name: nvidia-driver-418
+  name: nvidia-driver-510
 
 - type: system
   name: nvidia-settings

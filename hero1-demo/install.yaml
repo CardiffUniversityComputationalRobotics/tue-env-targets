@@ -1,9 +1,0 @@
-- type: target
-  name: hero1-common
-
-- type: target
-  name: hero-demo
-
-# tmux
-- type: target
-  name: tmux

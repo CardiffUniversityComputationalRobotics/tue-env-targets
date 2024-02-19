@@ -1,4 +1,4 @@
 - type: ros
   source:
-      type: system
-      name: franka-ros
+    type: system
+    name: franka-ros

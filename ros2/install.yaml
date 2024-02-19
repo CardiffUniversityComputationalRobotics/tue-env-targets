@@ -1,0 +1,8 @@
+- type: target
+  name: ros2-setup
+
+- type: target-now
+  name: colcon
+
+- type: target-now
+  name: build-essential

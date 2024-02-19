@@ -1,4 +1,4 @@
 - type: ros
   source:
-      type: system
-      name: franka-example-controllers
+    type: system
+    name: franka-example-controllers

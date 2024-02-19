@@ -3,3 +3,4 @@
     type: git
     url: git@github.com:CardiffUniversityComputationalRobotics/open_manipulator.git
     sub-dir: open_manipulator_controller
+    version: noetic-devel

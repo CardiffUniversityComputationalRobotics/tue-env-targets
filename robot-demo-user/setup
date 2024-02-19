@@ -1,7 +1,17 @@
 #! /usr/bin/env bash
 # shellcheck disable=SC2034
 
-alias local-core='export ROS_MASTER_URI=http://localhost:11311'
+function _any-core
+{
+    export ROS_MASTER_URI="http://$1:11311"
+}
+
+function _robot-core
+{
+    _any-core "$1.local"
+}
+
+alias local-core='_any-core localhost'
 
 ####################
 #
@@ -18,11 +28,8 @@ GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWUPSTREAM="auto git"
 
-# PROMPT_COMMAND='__git_ps1 "[\[\033[01;34m\]\w\[\033[00m\]]" "\n'\
-# '${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\$ "'
-
-
-function ROS_MASTER_NAME {
+function _ROS_MASTER_NAME {
+    [[ "${CUCR_ROS_VERSION}" -ne 1 ]] && return
     # shellcheck disable=SC2001
     ROS_MASTER=$(echo "$ROS_MASTER_URI" | sed 's#http://\(.*\):.*#\1#')
     if [ "$ROS_MASTER" == "localhost" ] || [ "$ROBOT_REAL" == "true" ]; then
@@ -32,9 +39,34 @@ function ROS_MASTER_NAME {
     fi
 }
 
+function _ROS2_DISCOVERY {
+    [[ "${CUCR_ROS_VERSION}" -ne 2 ]] && return
+    # shellcheck disable=SC2153
+    local ros_domain_id=${ROS_DOMAIN_ID}
+    [[ -n "${ros_domain_id}" ]] || ros_domain_id=0 # default
+    # shellcheck disable=SC2153
+    local ros_automatic_discovery_range=${ROS_AUTOMATIC_DISCOVERY_RANGE}
+    [[ -n "${ros_automatic_discovery_range}" ]] || ros_automatic_discovery_range="SUBNET" # default
+    if [ "${ros_automatic_discovery_range}" == "LOCALHOST" ] || [ "${ros_automatic_discovery_range}" == "SYSTEM_DEFAULT" ]
+    then
+        echo ""
+    else
+        echo "(${ros_domain_id}:${ros_automatic_discovery_range}) "
+    fi
+}
+
+function _VIRTUAL_ENV_NAME {
+    local virtual_env_name
+    virtual_env_name=$(basename "${VIRTUAL_ENV}")
+    [[ -n ${virtual_env_name} ]] && echo "(${virtual_env_name}) " || echo ""
+}
+
 # shellcheck disable=SC2154
-PS1='[\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1)\n'\
-'$(ROS_MASTER_NAME)${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \$ '
+PS1='$(_VIRTUAL_ENV_NAME)[\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1)\n'\
+'$(_ROS_MASTER_NAME)$(_ROS2_DISCOVERY)${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \$ '
+# shellcheck disable=SC2016
+_OLD_VIRTUAL_PS1='[\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1)\n'\
+'$(_ROS_MASTER_NAME)$(_ROS2_DISCOVERY)${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \$ '
 
 ####################
 #

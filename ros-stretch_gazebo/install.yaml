@@ -1,0 +1,6 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:hello-robot/stretch_ros.git
+      sub-dir: stretch_gazebo
+      version: noetic

@@ -1,0 +1,22 @@
+#! /usr/bin/env bash
+
+if [ -z "$CUCR_ROS_DISTRO" ]
+then
+    echo -e "\e[31;1m[ros] CUCR_ROS_DISTRO was not set\e[0m"
+    return 1
+fi
+
+if [ -f "$CUCR_SYSTEM_DIR"/devel/setup.bash ]
+then
+    # shellcheck disable=SC1091
+    source "$CUCR_SYSTEM_DIR"/devel/setup.bash
+else
+    echo -e "\e[33;1m[ros] system workspaces not found, sourcing /opt/ros\e[0m"
+    # shellcheck disable=SC1090
+    source /opt/ros/"$CUCR_ROS_DISTRO"/setup.bash
+fi
+
+# Set ROSCONSOLE_FORMAT
+# shellcheck disable=SC2016
+ROSCONSOLE_FORMAT='[${severity}][${node}][${time}]: ${message}'
+export ROSCONSOLE_FORMAT

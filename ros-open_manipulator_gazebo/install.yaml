@@ -1,0 +1,6 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:ROBOTIS-GIT/open_manipulator_simulations.git
+    sub-dir: open_manipulator_gazebo
+    version: noetic-devel

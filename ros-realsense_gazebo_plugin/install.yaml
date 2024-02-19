@@ -1,4 +1,4 @@
 - type: ros
   source:
     type: git
-    url: git@github.com:pal-robotics/realsense_gazebo_plugin.git
+    url: git@github.com:m-tartari/realsense_gazebo_plugin.git

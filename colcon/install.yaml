@@ -1,0 +1,14 @@
+- type: target
+  name: ros2-setup
+
+- type: system
+  name: python3-colcon-common-extensions
+
+- type: system
+  default:
+    name: python3-colcon-clean
+  focal:
+    name: null
+
+- type: system
+  name: python3-colcon-mixin

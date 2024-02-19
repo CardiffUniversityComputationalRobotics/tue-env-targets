@@ -1,4 +1,5 @@
 - type: ros
   source:
       type: git
-      url: git@github.com:roboticsgroup/roboticsgroup_gazebo_plugins.git
+      url: git@github.com:ROBOTIS-GIT/open_manipulator_dependencies.git
+      sub-dir: roboticsgroup_gazebo_plugins

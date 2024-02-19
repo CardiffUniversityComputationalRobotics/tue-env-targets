@@ -1,6 +1,0 @@
-#! /usr/bin/env bash
-
-function hero-dashboard
-{
-    hero_dashboard hero1.local
-}

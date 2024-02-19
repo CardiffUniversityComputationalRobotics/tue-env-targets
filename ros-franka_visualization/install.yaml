@@ -1,4 +1,4 @@
 - type: ros
   source:
-      type: system
-      name: franka-visualization
+    type: system
+    name: franka-visualization

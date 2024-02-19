@@ -1,5 +1,0 @@
-- type: ros
-  source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
-      sub-dir: tests_stretch_2/test_stretch_2_common_bringup

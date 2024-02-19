@@ -1,4 +1,0 @@
-#! /usr/bin/env bash
-
-alias demo-intern="tmux new -A -s 'hero-demo-intern' 'bash -ic 'hero-demo-intern''"
-alias demo-extern="tmux new -A -s 'hero-demo-extern' 'bash -ic 'hero-demo-extern''"

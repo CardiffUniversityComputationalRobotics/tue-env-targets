@@ -1,4 +1,6 @@
 # BEGIN CUCR PERSISTENT CONNECTION
+Host bitbucket.???  # .org and .com
+  ControlMaster no
 Host *
   # Enable persistent connection multiplexing
   ControlMaster auto

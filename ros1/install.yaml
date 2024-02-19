@@ -1,0 +1,11 @@
+- type: target
+  name: ros1-setup
+
+- type: target-now
+  name: build-essential
+
+- type: target-now
+  name: python3-rosdep
+
+- type: target-now
+  name: python3-catkin-tools

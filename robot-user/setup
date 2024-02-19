@@ -1,12 +1,5 @@
 #! /usr/bin/env bash
 
-alias local-core='export ROS_MASTER_URI=http://localhost:11311'
-function hostname-core
-{
-    # shellcheck disable=SC2155
-    export ROS_MASTER_URI=http://$(hostname).local:11311
-}
-
 ####################
 #
 # Robocup
