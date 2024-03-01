@@ -25,3 +25,9 @@ then
 	source ~/.bashrc
 	pip3 install .
 fi
+
+# add 'out' and 'cabinet_with_apriltag' to ~/.gazebo/models
+
+tue-install-info "Adding AprilTag models to /home/$USER/.gazebo/models/"
+mkdir -p ~/.gazebo/models
+cucr-install-cp -r worlds/models/out worlds/models/cabinet_with_apriltag ~/.gazebo/models
