@@ -30,4 +30,4 @@ fi
 
 tue-install-info "Adding AprilTag models to /home/$USER/.gazebo/models/"
 mkdir -p ~/.gazebo/models
-cucr-install-cp -r worlds/models/out worlds/models/cabinet_with_apriltag ~/.gazebo/models
+cucr-install-cp -r worlds/models/out worlds/models/cabinet_with_apriltag ~/.gazebo/models/
