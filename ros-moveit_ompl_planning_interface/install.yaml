@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/moveit_ompl_planning_interface.git
+      version: melodic-devel-moveit-ompl-source-test-goal_regions
