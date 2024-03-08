@@ -1,5 +1,0 @@
-- type: ros
-  source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/hybridplanner-goal-regions.git
-      sub-dir: hybridplanner_desktop_bringup
