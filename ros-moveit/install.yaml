@@ -2,4 +2,4 @@
   source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit.git
-      version: noetic-devel-agr
+      version: noetic-devel-ompl-source-test-goal_regions

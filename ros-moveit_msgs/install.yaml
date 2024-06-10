@@ -2,4 +2,4 @@
   source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit_msgs.git
-      version: noetic-devel-agr
+      version: goal_regions
