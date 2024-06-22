@@ -30,4 +30,4 @@ fi
 
 tue-install-info "Adding AprilTag models to /home/$USER/.gazebo/models/"
 mkdir -p ~/.gazebo/models
-cp ~/ros/noetic/system/src/test_fsa_simulation_bringup/worlds/models/* ~/.gazebo/models/ -r
+cp ~/ros/noetic/repos/github.com/CardiffUniversityComputationalRobotics/shared_autonomy_manipulator/test_fsa_simulation_bringup/worlds/models/* ~/.gazebo/models/ -r
