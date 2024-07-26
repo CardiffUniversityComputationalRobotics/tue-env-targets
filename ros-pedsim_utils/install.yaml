@@ -15,7 +15,7 @@
     source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
-      version: humble-devel
+      version: polina-srn-guidance
       sub-dir: pedsim_utils
   default:
     source:
