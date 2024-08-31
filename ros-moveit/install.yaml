@@ -3,7 +3,8 @@
     source:
       type: git
       url: https://github.com/frankaemika/franka_ros2.git
-  source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/moveit.git
-      version: noetic-devel-agr
+  default:
+    source:
+        type: git
+        url: git@github.com:CardiffUniversityComputationalRobotics/moveit.git
+        version: noetic-devel-agr

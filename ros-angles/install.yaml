@@ -3,6 +3,7 @@
     source:
       type: system
       name: angles
-  source:
-    type: system
-    name: geometry
+  default:
+    source:
+      type: system
+      name: geometry
