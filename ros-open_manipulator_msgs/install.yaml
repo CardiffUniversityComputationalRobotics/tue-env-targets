@@ -1,5 +1,15 @@
 - type: ros
-  source:
-    type: git
-    url: git@github.com:ROBOTIS-GIT/open_manipulator_msgs.git
-    version: noetic-devel
+  noetic:
+    source:
+      type: git
+      url: git@github.com:ROBOTIS-GIT/open_manipulator_msgs.git
+      version: noetic-devel
+  humble:
+    source:
+      type: git
+      url: git@github.com:ROBOTIS-GIT/open_manipulator_msgs.git
+      version: ros2
+  default:
+    source:
+      type: git
+      url: git@github.com:ROBOTIS-GIT/open_manipulator_msgs.git

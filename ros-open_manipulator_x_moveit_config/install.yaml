@@ -1,0 +1,6 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/open_manipulator_controls.git
+    sub-dir: open_manipulator_x_moveit_config
+    version: humble-devel

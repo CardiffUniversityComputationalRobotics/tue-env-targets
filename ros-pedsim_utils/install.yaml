@@ -11,6 +11,12 @@
       url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
       version: melodic-devel
       sub-dir: pedsim_utils
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
+      version: humble-devel
+      sub-dir: pedsim_utils
   default:
     source:
       type: git

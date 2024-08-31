@@ -1,4 +1,10 @@
 - type: ros
-  source:
-    type: system
-    name: roboticsgroup-upatras-gazebo-plugins
+  humble:
+    source:
+      type: git
+      url: git@github.com:roboticsgroup/roboticsgroup_upatras_gazebo_plugins.git
+      version: ros2
+  default:
+    source:
+      type: system
+      name: roboticsgroup-upatras-gazebo-plugins

@@ -1,0 +1,11 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/navigation2.git
+      sub-dir: nav2_map_server
+      version: humble
+  default:
+    source:
+      type: system
+      name: nav2-map-server

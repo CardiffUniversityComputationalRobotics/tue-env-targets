@@ -1,0 +1,6 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/open_manipulator.git
+    sub-dir: open_manipulator_x_description
+    version: humble-devel

@@ -1,0 +1,18 @@
+- type: ros
+  noetic:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/kino-smf-nav-stack.git
+      sub-dir: kino_smf_move_base_mapping
+      version: noetic-devel
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/kino-smf-nav-stack.git
+      sub-dir: kino_smf_move_base_mapping
+      version: humble-devel
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/kino-smf-nav-stack.git
+      sub-dir: kino_smf_move_base_mapping

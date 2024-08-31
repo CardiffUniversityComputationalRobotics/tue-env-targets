@@ -11,6 +11,10 @@
     source:
       type: system
       name: rplidar-ros
+  humble:
+    source:
+      type: system
+      name: rplidar-ros
   noetic:
     source:
       type: git

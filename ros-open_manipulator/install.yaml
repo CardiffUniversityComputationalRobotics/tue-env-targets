@@ -1,6 +1,18 @@
 - type: ros
-  source:
-    type: git
-    url: git@github.com:CardiffUniversityComputationalRobotics/open_manipulator.git
-    sub-dir: open_manipulator
-    version: noetic-devel
+  noetic:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/open_manipulator.git
+      sub-dir: open_manipulator
+      version: noetic-devel
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/open_manipulator.git
+      sub-dir: open_manipulator
+      version: humble-devel
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/open_manipulator.git
+      sub-dir: open_manipulator

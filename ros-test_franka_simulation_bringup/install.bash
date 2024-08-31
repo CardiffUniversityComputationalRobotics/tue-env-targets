@@ -4,7 +4,7 @@
 if [ ! -d ~/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04/ ]
 then
 	cucr-install-debug "Installing CoppeliaSim"
-	wget -P ~/ https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04.tar.xz &&  tar -xJf ~/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04.tar.xz -C ~/
+	wget -P ~/ https://downloads.coppeliarobotics.com/V4_1_0/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04.tar.xz &&  tar -xJf ~/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04.tar.xz -C ~/
 	echo '# CoppeliaSim env viarables' >> ~/.bashrc
 	echo 'export COPPELIASIM_ROOT=~/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04/' >> ~/.bashrc
 	echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$COPPELIASIM_ROOT' >> ~/.bashrc

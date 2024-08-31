@@ -9,6 +9,11 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/sfm_diff_drive.git
       version: melodic-devel
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/sfm_diff_drive.git
+      version: humble-devel
   default:
     source:
       type: git
