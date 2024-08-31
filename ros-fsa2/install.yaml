@@ -1,4 +1,0 @@
-- type: ros
-  source:
-    type: git
-    url: git@github.com:CardiffUniversityComputationalRobotics/fsa2.git
