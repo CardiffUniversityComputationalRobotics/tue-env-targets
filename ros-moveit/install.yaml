@@ -1,4 +1,8 @@
 - type: ros
+  humble:
+    source:
+      type: system
+      name: moveit
   source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit.git
