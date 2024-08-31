@@ -1,8 +1,8 @@
 - type: ros
   humble:
     source:
-      type: git
-      url: https://github.com/frankaemika/franka_ros2.git
+      type: system
+      name: moveit
   default:
     source:
         type: git
