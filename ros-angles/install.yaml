@@ -1,4 +1,8 @@
 - type: ros
+  humble:
+    source:
+      type: system
+      name: angles
   source:
     type: system
     name: geometry

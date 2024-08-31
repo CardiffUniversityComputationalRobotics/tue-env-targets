@@ -1,4 +1,4 @@
 - type: ros
   source:
     type: system
-    name: ament-cmake-clang
+    name: ament-cmake-clang-format

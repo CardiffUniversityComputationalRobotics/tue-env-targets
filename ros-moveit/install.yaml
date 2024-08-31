@@ -1,8 +1,8 @@
 - type: ros
   humble:
     source:
-      type: system
-      name: moveit
+      type: git
+      url: https://github.com/frankaemika/franka_ros2.git
   source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit.git
