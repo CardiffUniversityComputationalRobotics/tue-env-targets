@@ -1,4 +1,9 @@
 - type: ros
-  source:
-    type: system
-    name: franka-description
+  humble:
+    source:
+      type: git
+      url: https://github.com/frankaemika/franka_description.git
+  default:
+    source:
+      type: system
+      name: franka-description
