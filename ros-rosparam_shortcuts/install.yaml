@@ -1,5 +1,11 @@
 - type: ros
-  source:
-    type: system
-    name: rosparam-shortcuts
+  humble:
+    source:
+      type: git
+      url: https://github.com/PickNikRobotics/rosparam_shortcuts.git
+      version: ros2
+  default:
+    source:
+      type: system
+      name: rosparam-shortcuts
 
