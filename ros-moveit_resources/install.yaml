@@ -1,5 +1,11 @@
 - type: ros
-  source:
+  humble:
+    source:
+      type: git
+      url: https://github.com/ros-planning/moveit_resources
+      version: humble
+  default:
+    source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit_resources.git
       version: master
