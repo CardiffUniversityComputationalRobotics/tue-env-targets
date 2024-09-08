@@ -1,7 +1,9 @@
 #!/bin/bash
 
 if [[ "$ROS_DISTRO" == "humble" ]]; then
-    cd ~/ros/humble/repos/github.com/frankaemika/libfranka
+    cd ~/ros/humble/repos/github.com/frankaemika/
+    git clone https://github.com/frankaemika/libfranka.git --recursive
+    git checkout 0.13.2
     mkdir build
     cd build
     cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=OFF  ..

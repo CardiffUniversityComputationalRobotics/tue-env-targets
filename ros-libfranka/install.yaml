@@ -1,10 +1,5 @@
 - type: ros
-  humble:
-    source:
-      type: git
-      url: https://github.com/frankaemika/libfranka.git
-      version: 0.13.3
-  default:
+  noetic:
     source:
       type: system
       name: libfranka
