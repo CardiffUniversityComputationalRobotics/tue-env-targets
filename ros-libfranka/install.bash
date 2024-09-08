@@ -2,6 +2,7 @@
 
 if [[ "$ROS_DISTRO" == "humble" ]]; then
     cd ~/ros/humble/repos/github.com/frankaemika/
+    rm -rf libfranka
     git clone https://github.com/frankaemika/libfranka.git --recursive
     git checkout 0.13.2
     mkdir build
