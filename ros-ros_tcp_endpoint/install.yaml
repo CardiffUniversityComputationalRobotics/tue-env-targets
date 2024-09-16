@@ -2,3 +2,4 @@
   source:
       type: git
       url: git@github.com:Unity-Technologies/ROS-TCP-Endpoint.git
+      version: Roscpp
