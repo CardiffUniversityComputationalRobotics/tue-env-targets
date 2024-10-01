@@ -2,7 +2,7 @@
   humble:
     source:
       type: git
-      url: https://github.com/frankaemika/franka_description.git
+      url: https://github.com/CardiffUniversityComputationalRobotics/franka_description.git
   default:
     source:
       type: system
