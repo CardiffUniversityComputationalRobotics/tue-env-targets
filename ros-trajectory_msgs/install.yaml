@@ -1,4 +1,9 @@
 - type: ros
-  source:
-    type: system
-    name: common-msgs
+  humble:
+    source: 
+      type: system
+      name: common-interfaces
+  default:
+    source: 
+      type: system
+      name: common-msgs
