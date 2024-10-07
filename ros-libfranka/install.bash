@@ -3,8 +3,8 @@
 # if [[ "$ROS_DISTRO" == "humble" ]]; then
 if [ ! -d ~/libfranka/ ]; then
     # cd ~/ros/humble/repos/github.com/frankaemika/
-    sudo apt install python3-rosdep2
-    rm -rf libfranka
+    sudo apt remove "*libfranka*"
+	sudo apt install build-essential cmake git libpoco-dev libeigen3-dev python3-rosdep2
     git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.3
     cd libfranka
     mkdir build

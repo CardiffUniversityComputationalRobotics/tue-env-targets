@@ -1,4 +1,10 @@
 - type: ros
-  source:
-    type: git
-    url: git@github.com:m-tartari/realsense_gazebo_plugin.git
+  humble:
+    source: 
+      type: git
+      url: https://github.com/pal-robotics/realsense_gazebo_plugin.git
+      version: foxy-devel
+  default:
+    source:
+      type: git
+      url: git@github.com:m-tartari/realsense_gazebo_plugin.git
