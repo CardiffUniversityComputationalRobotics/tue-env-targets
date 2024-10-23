@@ -9,8 +9,10 @@ if ! grep -q "/usr/share/gazebo/setup.sh" ~/.bashrc;
     then
         echo "
 # setup needed for gazebo classic
+source /usr/share/gazebo/setup.sh
 export LIBGL_ALWAYS_SOFTWARE=1
-source /usr/share/gazebo/setup.sh" >> ~/.bashrc
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${ROS_PACKAGE_PATH}
+export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:${ROS_PACKAGE_PATH}" >> ~/.bashrc
     fi
 
 # echo export GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH}:~/ros/humble/system/src/:~/.ignition/models/ >> ~/.bashrc
