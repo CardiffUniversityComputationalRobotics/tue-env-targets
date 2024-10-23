@@ -1,4 +1,10 @@
 - type: ros
-  source:
-    type: system
-    name: franka-msgs
+  humble:
+    source:
+      type: git
+      url: https://github.com/CardiffUniversityComputationalRobotics/franka_ros2.git
+      sub-dir: franka_msgs
+  default:
+    source:
+      type: system
+      name: franka-msgs
