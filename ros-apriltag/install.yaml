@@ -1,0 +1,6 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:AprilRobotics/apriltag.git
+      # url: git@github.com:CardiffUniversityComputationalRobotics/shared_autonomy_manipulator.git
+      # sub-dir: apriltag
