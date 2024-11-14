@@ -1,5 +1,4 @@
 - type: ros
   source:
-      type: git
-      url: git@github.com:ompl/ompl.git
-      version: tags/1.5.0
+    type: system
+    name: ompl

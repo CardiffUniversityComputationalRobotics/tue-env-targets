@@ -1,4 +1,4 @@
 - type: ros
   source:
     type: system
-    name: pybind11-catkin
+    name: moveit-ros-visualization

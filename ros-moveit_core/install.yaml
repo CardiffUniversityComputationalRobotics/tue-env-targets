@@ -1,5 +1,4 @@
 - type: ros
   source:
     type: system
-    name: eigen-stl-containers
-    
+    name: moveit-core

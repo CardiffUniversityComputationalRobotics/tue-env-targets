@@ -1,5 +1,4 @@
 - type: ros
   source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/panda_moveit_config.git
-      version: noetic-devel-ompl-agr
+    type: system
+    name: panda-moveit-config

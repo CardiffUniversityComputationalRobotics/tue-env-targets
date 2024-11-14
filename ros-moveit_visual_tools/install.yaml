@@ -1,4 +1,5 @@
 - type: ros
+<<<<<<< HEAD
   humble:
     source:
       type: git
@@ -9,3 +10,8 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit_visual_tools.git
       version: noetic-devel
+=======
+  source:
+    type: system
+    name: moveit-visual-tools
+>>>>>>> parent of ce28b2ec (Merge branch 'cucr-melodic-goal-regions' into ioannis_dev)

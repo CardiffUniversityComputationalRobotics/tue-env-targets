@@ -36,3 +36,17 @@ export GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH}:~/ros/humble/system/src/:~/.
 	fi
 
 fi
+<<<<<<< HEAD
+=======
+
+
+if [ ! -d ~/PyRep/ ]
+then
+	cucr-install-debug "Installing PyRep"
+	git clone git@github.com:stepjam/PyRep.git ~/PyRep
+	cd ~/PyRep/
+	pip3 install -r requirements.txt
+	source ~/.bashrc
+	pip3 install .
+fi
+>>>>>>> parent of ce28b2ec (Merge branch 'cucr-melodic-goal-regions' into ioannis_dev)

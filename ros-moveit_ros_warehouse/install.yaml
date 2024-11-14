@@ -1,4 +1,4 @@
 - type: ros
   source:
     type: system
-    name: ruckig
+    name: moveit-ros-warehouse
