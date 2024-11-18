@@ -1,4 +1,10 @@
 - type: ros
-  source:
-      type: git
-      url: git@github.com:Unity-Technologies/ROS-TCP-Endpoint.git
+  humble:
+    source:
+        type: git
+        url: git@github.com:Unity-Technologies/ROS-TCP-Endpoint.git
+        version: main-ros2
+  default:
+    source:
+        type: git
+        url: git@github.com:Unity-Technologies/ROS-TCP-Endpoint.git
