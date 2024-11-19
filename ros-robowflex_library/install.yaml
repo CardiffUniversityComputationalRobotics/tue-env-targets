@@ -1,11 +1,6 @@
 - type: ros
   source:
       type: git
-<<<<<<< HEAD
       url: git@github.com:CardiffUniversityComputationalRobotics/robowflex.git
       sub-dir: robowflex_library
       version: master-gmp
-=======
-      url: git@github.com:KavrakiLab/robowflex.git
-      sub-dir: robowflex_library
->>>>>>> parent of ce28b2ec (Merge branch 'cucr-melodic-goal-regions' into ioannis_dev)

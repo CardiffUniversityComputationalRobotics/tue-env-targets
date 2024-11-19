@@ -1,11 +1,5 @@
 - type: ros
   source:
       type: git
-<<<<<<< HEAD
       url: git@github.com:CardiffUniversityComputationalRobotics/robowflex_resources.git
       version: master-franka-dev
-
-      
-=======
-      url: git@github.com:KavrakiLab/robowflex_resources.git
->>>>>>> parent of ce28b2ec (Merge branch 'cucr-melodic-goal-regions' into ioannis_dev)
