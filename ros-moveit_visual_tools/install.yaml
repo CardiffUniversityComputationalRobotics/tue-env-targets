@@ -1,9 +1,11 @@
 - type: ros
   humble:
     source:
-      type: git
-      url: https://github.com/ros-planning/moveit_visual_tools.git
-      version: ros2
+      # type: git
+      # url: https://github.com/ros-planning/moveit_visual_tools.git
+      # version: ros2
+      type: system
+      name: moveit-visual-tools
   default:
     source:
       type: git
