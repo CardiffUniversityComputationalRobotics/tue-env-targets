@@ -1,0 +1,14 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/franka_shared_control_common_bringup.git
+      sub-dir: franka_shared_control_common_bringup
+      # version: humble
+      # version: ros2-franka
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
+      sub-dir: tests_franka/test_franka_common_bringup
+      version: master
