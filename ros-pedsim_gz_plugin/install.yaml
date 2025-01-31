@@ -1,0 +1,6 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
+    sub-dir: pedsim_gz_plugin
+    version: gz-humble-devel

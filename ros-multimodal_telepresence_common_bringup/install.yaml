@@ -1,5 +1,13 @@
 - type: ros
-  source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/multimodal_telepresence.git
-      sub-dir: multimodal_telepresence_common_bringup
+  default:
+    source:
+        type: git
+        url: git@github.com:CardiffUniversityComputationalRobotics/multimodal_telepresence.git
+        sub-dir: multimodal_telepresence_common_bringup
+        version: ros2
+  noetic:
+    source:
+        type: git
+        url: git@github.com:CardiffUniversityComputationalRobotics/multimodal_telepresence.git
+        sub-dir: multimodal_telepresence_common_bringup
+        version: ros

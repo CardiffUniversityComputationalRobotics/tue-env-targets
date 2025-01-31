@@ -1,0 +1,7 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_stretch_ros2.git
+      sub-dir: stretch_gz_sim
+      version: cucr
+
