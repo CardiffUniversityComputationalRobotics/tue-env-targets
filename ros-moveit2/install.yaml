@@ -1,0 +1,10 @@
+- type: ros
+  source:
+    type: system
+    name: moveit
+
+# - type: ros
+#   source:
+#       type: git
+#       url: https://github.com/ros-planning/moveit2.git
+#       version: humble

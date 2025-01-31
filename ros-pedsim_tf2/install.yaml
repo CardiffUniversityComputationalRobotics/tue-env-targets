@@ -1,0 +1,12 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
+      version: humble-devel
+      sub-dir: pedsim_tf2
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
+      sub-dir: pedsim_tf2

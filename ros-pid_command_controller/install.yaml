@@ -1,0 +1,5 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/reachy_2023.git
+    sub-dir: pid_command_controller

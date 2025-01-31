@@ -1,5 +1,6 @@
 - type: ros
   source:
       type: git
-      url: git@github.com:KavrakiLab/robowflex.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/robowflex.git
       sub-dir: robowflex_library
+      version: master-gmp

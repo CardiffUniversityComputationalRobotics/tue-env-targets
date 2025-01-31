@@ -1,0 +1,5 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:teamspatzenhirn/rviz_2d_overlay_plugins.git
+    sub-dir: rviz_2d_overlay_plugins

@@ -1,0 +1,10 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/apriltag_ros.git
+  default:
+    source:
+        type: git
+        url: git@github.com:CardiffUniversityComputationalRobotics/shared_autonomy_manipulator.git
+        sub-dir: apriltag_ros

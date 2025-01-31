@@ -1,0 +1,4 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/apriltag_gazebo_models.git

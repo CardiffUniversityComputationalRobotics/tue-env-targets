@@ -1,0 +1,5 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/tests-franka-gmp.git
+      sub-dir: test_franka_gmp_desktop_bringup

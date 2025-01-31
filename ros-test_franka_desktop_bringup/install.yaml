@@ -1,5 +1,14 @@
 - type: ros
-  source:
+  humble:
+    source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
       sub-dir: tests_franka/test_franka_desktop_bringup
+      # version: humble
+      version: ros2-franka
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
+      sub-dir: tests_franka/test_franka_desktop_bringup
+      version: master

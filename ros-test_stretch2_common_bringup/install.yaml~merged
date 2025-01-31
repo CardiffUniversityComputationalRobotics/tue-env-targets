@@ -1,0 +1,14 @@
+- type: ros
+  source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
+<<<<<<< HEAD
+<<<<<<< HEAD:ros-test_stretch2_common_bringup/install.yaml
+      sub-dir: tests_stretch2/test_stretch2_common_bringup
+=======
+      sub-dir: tests_stretch2/test_stretch2_desktop_bringup
+>>>>>>> cucr-melodic-goal-regions:ros-test_stretch2_desktop_bringup/install.yaml
+=======
+      sub-dir: tests_stretch2/test_stretch2_common_bringup
+>>>>>>> cucr-melodic-goal-regions
+      version: master

@@ -5,6 +5,12 @@
       url: git@github.com:CardiffUniversityComputationalRobotics/social-multi-fed-nav-stack.git
       sub-dir: smf_move_base_planning
       version: melodic-devel
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/social-multi-fed-nav-stack.git
+      sub-dir: smf_move_base_planning
+      version: humble-devel
   default:
     source:
       type: git

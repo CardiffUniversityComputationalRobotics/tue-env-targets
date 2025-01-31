@@ -1,4 +1,10 @@
 - type: ros
-  source:
-    type: git
-    url: git@bitbucket.org:acl-swarm/ford_msgs.git
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/ford_msgs.git
+      version: humble-devel
+  default:
+    source:
+      type: git
+      url: git@bitbucket.org:acl-swarm/ford_msgs.git

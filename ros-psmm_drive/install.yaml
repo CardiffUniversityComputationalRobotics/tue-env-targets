@@ -1,4 +1,10 @@
 - type: ros
-  source:
-    type: git
-    url: git@github.com:CardiffUniversityComputationalRobotics/psmm_drive.git
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/psmm_drive.git
+      version: humble-devel
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/psmm_drive.git

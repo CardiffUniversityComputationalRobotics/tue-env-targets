@@ -11,6 +11,12 @@
       url: git@github.com:CardiffUniversityComputationalRobotics/esc-nav-stack.git
       version: melodic-devel
       sub-dir: esc_move_base_mapping
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/esc-nav-stack.git
+      version: humble-devel
+      sub-dir: esc_move_base_mapping
   default:
     source:
       type: git

@@ -1,5 +1,12 @@
 - type: ros
-  source:
-    type: git
-    url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
-    sub-dir: tests_open_manipulator/test_open_manipulator_simulation_bringup
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
+      sub-dir: tests_open_manipulator/test_open_manipulator_simulation_bringup
+      version: humble
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
+      sub-dir: tests_open_manipulator/test_open_manipulator_simulation_bringup

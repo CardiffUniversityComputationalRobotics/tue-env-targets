@@ -1,0 +1,5 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/ros2_leg_detector.git
+    sub-dir: leg_detector

@@ -1,4 +1,10 @@
 - type: ros
-  source:
-    type: system
-    name: franka-description
+  humble:
+    source:
+      type: git
+      url: https://github.com/CardiffUniversityComputationalRobotics/franka_description.git
+      version: cucr_branch
+  default:
+    source:
+      type: system
+      name: franka-description

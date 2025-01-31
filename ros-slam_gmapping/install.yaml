@@ -1,0 +1,11 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/slam_gmapping.git
+      version: humble-devel
+      sub-dir: slam_gmapping
+  default:
+    source:
+      type: system
+      name: slam-gmapping

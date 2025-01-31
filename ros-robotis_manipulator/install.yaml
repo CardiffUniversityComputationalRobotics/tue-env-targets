@@ -1,4 +1,10 @@
 - type: ros
-  source:
-    type: system
-    name: robotis-manipulator
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/robotis_manipulator.git
+      version: ros2
+  default:
+    source:
+      type: system
+      name: robotis-manipulator
