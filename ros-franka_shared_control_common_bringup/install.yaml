@@ -2,7 +2,7 @@
   humble:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/franka_shared_control_common_bringup.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/franka_shared_control.git
       sub-dir: franka_shared_control_common_bringup
       # version: humble
       # version: ros2-franka
