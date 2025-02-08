@@ -1,6 +1,5 @@
 - type: ros
-  humble:
-    source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/relaxed_sbp.git
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/relaxed_sbp.git
   
