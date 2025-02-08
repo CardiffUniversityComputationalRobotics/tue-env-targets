@@ -1,0 +1,6 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/custom_interfaces.git
+  

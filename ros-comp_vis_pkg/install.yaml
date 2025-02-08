@@ -1,0 +1,6 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/comp_vis_pkg.git
+  
