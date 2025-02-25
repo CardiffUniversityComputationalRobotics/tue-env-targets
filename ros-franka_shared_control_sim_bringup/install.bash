@@ -2,7 +2,7 @@
 # shellcheck disable=SC1090
 
 # this is for ROS1
-if [ "$ROS_DISTRO" == "noetic" ]; then
+if [ "$ROS_DISTRO" = "noetic" ]; then
 	if [ ! -d ~/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04/ ]; then
 		cucr-install-debug "Installing CoppeliaSim"
 		wget -P ~/ https://downloads.coppeliarobotics.com/V4_1_0/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04.tar.xz && tar -xJf ~/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04.tar.xz -C ~/
@@ -28,7 +28,7 @@ export GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH}:~/ros/humble/system/src/:~/.
 
 fi
 
-if [ ! -d ~/PyRep/ ]
+if [ ! -d ~/PyRep/ ]; then 
 	pip3 install -r requirements.txt
 	source ~/.bashrc
 	pip3 install .
