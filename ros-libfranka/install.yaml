@@ -3,7 +3,8 @@
     source:
       type: git
       url: https://github.com/frankaemika/libfranka.git
-      version: 0.13.3
+      # version: 0.13.3
+      version: 0.15.0
   default:
     source:
       type: system

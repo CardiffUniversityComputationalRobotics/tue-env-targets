@@ -1,4 +1,7 @@
-- type: ros
-  source:
-    type: git
-    url: git@github.com:fmtlib/fmt.git
+# - type: ros
+#   source:
+#     type: git
+#     url: git@github.com:fmtlib/fmt.git
+
+- type: system
+  name: libfmt8
