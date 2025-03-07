@@ -3,7 +3,7 @@
     source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
-      version: polina-srn-guidance
+      version: polina-guidance
       sub-dir: pedsim_tf2
   default:
     source:
