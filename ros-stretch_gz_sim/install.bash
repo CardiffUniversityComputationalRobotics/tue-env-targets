@@ -1,0 +1,2 @@
+#! /usr/bin/env bash
+echo 'export GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH}:~/ros/humble/system/src' >> ~/.bashrc
