@@ -2,8 +2,8 @@
 
 # if [[ "$ROS_DISTRO" == "humble" ]]; then
 if [ ! -d ~/libfranka/ ]; then
-    # cd ~/ros/humble/repos/github.com/frankaemika/
-    cd ~
+    cd ~/ros/humble/repos/github.com/frankaemika/
+    # cd ~
     sudo apt remove "*libfranka*"
     sudo apt install build-essential cmake git libpoco-dev libeigen3-dev python3-rosdep2 libfmt-dev
     sudo apt-get install -y lsb-release curl
