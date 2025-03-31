@@ -12,8 +12,8 @@ if [ ! -d ~/libfranka/ ]; then
     echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/robotpkg.asc] http://robotpkg.openrobots.org/packages/debian/pub $(lsb_release -cs) robotpkg" | sudo tee /etc/apt/sources.list.d/robotpkg.list
     sudo apt-get update
     sudo apt-get install -y robotpkg-pinocchio
-    git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.3
-    # git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.15.0
+    # git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.3 # uses cmake 3.4 which is not supported anymore by cmake (min version is now 3.5)
+    git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.15.0
     git submodule update
     cd libfranka
     mkdir build
