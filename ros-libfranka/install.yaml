@@ -1,10 +1,12 @@
 - type: ros
   humble:
     source:
-      type: git
-      url: https://github.com/frankaemika/libfranka.git
-      # version: 0.13.3 # uses cmake 3.4 which is not supported anymore by cmake (min version is now 3.5)
-      version: 0.15.0
+      # type: git
+      # url: https://github.com/frankaemika/libfranka.git
+      # # version: 0.13.3 # uses cmake 3.4 which is not supported anymore by cmake (min version is now 3.5)
+      # version: 0.15.0
+      type: system
+      name: libfranka
   default:
     source:
       type: system
