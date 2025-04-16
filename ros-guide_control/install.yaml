@@ -1,11 +1,5 @@
 - type: ros
-  humble:
-    source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/guide_control.git
-      version: humble-devel
-  default:
-    source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/guide_control.git
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/guide_control.git
 
