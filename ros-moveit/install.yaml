@@ -1,5 +1,10 @@
 - type: ros
-  source:
+  humble:
+    source:
+      type: system
+      name: moveit
+  default:
+    source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit.git
       version: noetic-devel-agr
