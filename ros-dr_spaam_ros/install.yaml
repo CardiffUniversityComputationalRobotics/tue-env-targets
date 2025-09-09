@@ -1,0 +1,12 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/2D_lidar_person_detection.git
+      version: humble-devel
+      sub-dir: dr_spaam_ros
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/2D_lidar_person_detection.git
+      sub-dir: dr_spaam_ros
