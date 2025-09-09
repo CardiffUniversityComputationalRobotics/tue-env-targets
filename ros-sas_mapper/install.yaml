@@ -1,0 +1,12 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/sas_nav_stack.git
+      sub-dir: sas_mapper
+      version: humble
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/sas_nav_stack.git
+      sub-dir: sas_mapper

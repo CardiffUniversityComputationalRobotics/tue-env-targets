@@ -1,6 +1,18 @@
 - type: ros
-  source:
+  noetic:
+    source:
       type: git
       url: git@github.com:hello-robot/stretch_ros.git
       sub-dir: stretch_description
       version: noetic
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_stretch_ros2.git
+      sub-dir: stretch_description
+      version: cucr-humble
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_stretch_ros2.git
+      sub-dir: stretch_description

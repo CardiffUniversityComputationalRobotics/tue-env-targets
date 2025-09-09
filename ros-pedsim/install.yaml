@@ -15,7 +15,7 @@
     source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
-      version: humble-devel
+      version: gz-humble-devel
       sub-dir: 3rdparty/libpedsim
   default:
     source:

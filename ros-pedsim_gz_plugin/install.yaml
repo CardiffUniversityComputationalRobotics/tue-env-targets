@@ -4,9 +4,9 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
       version: gz-humble-devel
-      sub-dir: pedsim_rviz_plugin
+      sub-dir: pedsim_gz_plugin
   default:
     source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/pedsim_ros.git
-      sub-dir: pedsim_rviz_plugin
+      sub-dir: pedsim_gz_plugin
