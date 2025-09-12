@@ -1,0 +1,4 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/real_social_nav_tests.git
