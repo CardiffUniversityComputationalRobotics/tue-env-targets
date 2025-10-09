@@ -1,0 +1,7 @@
+- type: ros
+  source:
+    # type: git
+    # url: https://github.com/Kinovarobotics/ros2_kortex.git
+    # version: humble
+    type: system
+    name: kinova-gen3-7dof-robotiq-2f-85-moveit-config
