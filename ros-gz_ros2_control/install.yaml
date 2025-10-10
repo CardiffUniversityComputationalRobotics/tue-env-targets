@@ -1,0 +1,4 @@
+- type: ros
+  source:
+    type: system
+    name: gz-ros2-control
