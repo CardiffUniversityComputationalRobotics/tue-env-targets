@@ -1,0 +1,7 @@
+- type: ros
+  source:
+    # type: git
+    # url: https://github.com/PickNikRobotics/picknik_controllers.git
+    # sub-dir: picknik_reset_fault_controller
+    type: system
+    name: picknik-reset-fault-controller

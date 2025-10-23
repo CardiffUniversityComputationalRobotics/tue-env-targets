@@ -2,7 +2,7 @@
   source:
     type: git
     url: https://github.com/Kinovarobotics/ros2_kortex.git
-    sub-dir: kortex_moveit_config/kinova_gen3_7dof_robotiq_2f_85_moveit_config
+    sub-dir: kortex_description
     version: humble
     # type: system
     # name: kinova-gen3-7dof-robotiq-2f-85-moveit-config
