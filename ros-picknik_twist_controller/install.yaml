@@ -1,0 +1,7 @@
+- type: ros
+  source:
+    # type: git
+    # url: https://github.com/PickNikRobotics/picknik_controllers.git
+    # sub-dir: picknik_twist_controller
+    type: system
+    name: picknik-twist-controller
