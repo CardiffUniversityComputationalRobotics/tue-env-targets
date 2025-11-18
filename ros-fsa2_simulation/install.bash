@@ -4,8 +4,6 @@
 mkdir -p ~/.gazebo/models
 cp ~/ros/humble/repos/github.com/CardiffUniversityComputationalRobotics/fsa2/fsa2_simulation/worlds/models/* ~/.gazebo/models/ -r
 
-echo export GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH}:~/ros/humble/system/src/:~/.gazebo/models/ >> ~/.bashrc
-
 # setup needed for gazebo classic
 if ! grep -q "export GZ_SIM_RESOURCE_PATH=" ~/.bashrc;
     then
