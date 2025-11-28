@@ -4,6 +4,7 @@
       type: git
       url: https://github.com/CardiffUniversityComputationalRobotics/franka_ros2.git
       sub-dir: franka_msgs
+      version: v0.1.9 # max version that works with libfranka 0.13.3 that works with real robot
   default:
     source:
       type: system
