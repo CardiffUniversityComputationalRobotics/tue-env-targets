@@ -1,7 +1,9 @@
 - type: ros
   source:
     type: git
-    url: https://github.com/CardiffUniversityComputationalRobotics/franka_ros2.git
+    # url: https://github.com/CardiffUniversityComputationalRobotics/franka_ros2.git
     # version: cucr_branch
     # version: ioannis_dev
-    version: v0.1.9 # max version that works with libfranka 0.13.3 that works with real robot
+    # version: v0.1.9 # max version that works with libfranka 0.13.3 that works with real robot
+    url: https://github.com/frankarobotics/franka_ros2.git
+    version: v0.1.15

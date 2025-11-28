@@ -15,10 +15,13 @@ if [ ! -d ~/ros/humble/repos/github.com/CardiffUniversityComputationalRobotics/ 
     sudo apt-get install -y robotpkg-pinocchio
     # git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.3 # uses cmake 3.4 which is not supported anymore by cmake (min version is now 3.5)
 
-    # git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.3
-    git clone --recursive https://github.com/CardiffUniversityComputationalRobotics/libfranka.git
+    git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.2
+    # git clone --recursive https://github.com/CardiffUniversityComputationalRobotics/libfranka.git
+    
     cd libfranka
-    git checkout -f ioannis_dev
+
+    # git checkout -f ioannis_dev
+
     git submodule update
 
     mkdir build
