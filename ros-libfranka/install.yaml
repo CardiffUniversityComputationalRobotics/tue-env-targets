@@ -1,12 +1,14 @@
 - type: ros
   humble:
     source:
-      # type: git
+      type: git
       # url: https://github.com/frankaemika/libfranka.git
-      # # version: 0.13.3 # uses cmake 3.4 which is not supported anymore by cmake (min version is now 3.5)
-      # version: 0.15.0
-      type: system
-      name: libfranka
+      # version: 0.13.3 # uses cmake 3.4 which is not supported anymore by cmake (min version is now 3.5)
+      url: https://github.com/CardiffUniversityComputationalRobotics/libfranka.git
+      version: ioannis_dev # 0.13.3 but with cmake 3.5 min
+
+      # type: system
+      # name: libfranka # i need version 0.13.3 (at most) that works with robot server version 6, so apt won't work
   default:
     source:
       type: system
