@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ "$ROS_DISTRO" == "humble" ]]; then
-if [ ! -d ~/libfranka/ ]; then
+# if [ ! -d ~/libfranka/ ]; then
     # cd ~/ros/humble/repos/github.com/frankaemika/
     cd ~/ros/humble/repos/github.com/CardiffUniversityComputationalRobotics
     # cd ~
@@ -30,7 +30,7 @@ if [ ! -d ~/libfranka/ ]; then
     cd ~/ros/humble/system/
     rosdep update
     rosdep install --from-paths src --ignore-src --rosdistro humble -y --skip-keys libfranka
-fi
+# fi
 fi
 
 # if [ ! -d ~/libfranka/ ]
