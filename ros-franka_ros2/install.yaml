@@ -6,4 +6,4 @@
     # version: ioannis_dev
     url: https://github.com/frankarobotics/franka_ros2.git
     # version: v0.1.15
-    version: v3.1.1
+    version: humble
