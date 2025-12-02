@@ -3,7 +3,8 @@
     source:
       type: git
       url: https://github.com/ros-controls/ros2_controllers.git
-      version: 2.25.0 # need older version to work with older franka_ros2 for real robot 
+      # version: 2.25.0 # need older version to work with older franka_ros2 for real robot 
+      version: 2.45.0 # need older version to work with older franka_ros2 for real robot 
   default:
     source:
       type: system
