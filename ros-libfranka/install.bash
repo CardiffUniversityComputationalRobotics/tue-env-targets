@@ -5,7 +5,7 @@ if [ ! -d ~/ros/humble/repos/github.com/CardiffUniversityComputationalRobotics/ 
     # cd ~/ros/humble/repos/github.com/frankaemika/
     cd ~/ros/humble/repos/github.com/CardiffUniversityComputationalRobotics
     # cd ~
-    sudo apt remove "*libfranka*"
+        
     sudo apt install build-essential cmake git libpoco-dev libeigen3-dev python3-rosdep2 libfmt-dev
     sudo apt-get install -y lsb-release curl
     sudo mkdir -p /etc/apt/keyrings
@@ -16,7 +16,7 @@ if [ ! -d ~/ros/humble/repos/github.com/CardiffUniversityComputationalRobotics/ 
     # git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.3 # uses cmake 3.4 which is not supported anymore by cmake (min version is now 3.5)
 
     # git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.2
-    git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.3
+    git clone --recursive https://github.com/frankaemika/libfranka.git --branch 0.13.2
     # git clone --recursive https://github.com/CardiffUniversityComputationalRobotics/libfranka.git
     
     cd libfranka
