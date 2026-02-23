@@ -3,7 +3,6 @@
 
 if [ ! -d ~/libfranka/ ]
 then
-	cucr-install-debug "Installing CoppeliaSim"
 	sudo apt remove "*libfranka*"
 	sudo apt install build-essential cmake git libpoco-dev libeigen3-dev
 	git clone --recursive https://github.com/frankaemika/libfranka --branch 0.10.0 # only for FR3

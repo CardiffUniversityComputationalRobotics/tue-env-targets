@@ -3,3 +3,4 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/hybridplanner-goal-regions.git
       sub-dir: hybridplanner_simulation_bringup
+      version: main-diffusionv2
