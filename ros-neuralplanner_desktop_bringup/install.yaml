@@ -2,4 +2,4 @@
   source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/neural-path-planner.git
-      sub-dir: neuralplanner_common_bringup
+      sub-dir: neuralplanner_desktop_bringup
