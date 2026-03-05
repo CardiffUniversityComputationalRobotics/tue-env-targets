@@ -1,0 +1,5 @@
+- type: ros
+  source:
+    type: git
+    url: git@github.com:CardiffUniversityComputationalRobotics/drl_vo_nav.git
+    sub-dir: drl_vo
