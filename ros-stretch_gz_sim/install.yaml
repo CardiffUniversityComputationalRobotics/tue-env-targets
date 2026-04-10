@@ -2,9 +2,9 @@
   humble:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_stretch_ros2.git
+      url: git@github.com:CardiffUniversityComputationalRobotics/stretch_ros2.git
       sub-dir: stretch_gz_sim
-      version: cucr-humble
+      version: humble
   default:
     source:
       type: git
