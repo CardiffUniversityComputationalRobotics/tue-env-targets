@@ -2,9 +2,22 @@
   humble:
     source:
       type: git
-      url: https://github.com/CardiffUniversityComputationalRobotics/franka_description.git
-      # version: cucr_branch
+      # Pinned to the CUCR fork (Apr 2026) on branch ioannis_dev because
+      # gz_ros2_control on Humble's Ignition Fortress doesn't honour URDF
+      # mimic in physics (bullet-featherstone engine isn't shipped on
+      # Humble — only dartsim/bullet/tpe). The fix is to drop the URDF
+      # <mimic> on finger_joint2 and declare both fingers explicitly in
+      # the ros2_control block so MoveIt + JTC drive both in synchronised
+      # trajectories. Those edits cannot live in the upstream
+      # frankarobotics/franka_description checkout (cucr-get update would
+      # discard them on every reinstall), so they live as a permanent
+      # delta on this fork branch, based on tag 1.4.0.
+      url: git@github.com:CardiffUniversityComputationalRobotics/franka_description.git
       version: ioannis_dev
+      # url: https://github.com/frankarobotics/franka_description.git
+      # version: 1.6.1  # paired with franka_ros2 v2.3.0
+      # version: 1.4.0  # upstream tag the ioannis_dev branch is based on
+      # version: 0.4.0  # paired with franka_ros2 v0.1.15 (real-robot path)
   default:
     source:
       type: system

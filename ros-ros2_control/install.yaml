@@ -1,14 +1,15 @@
 - type: ros
-  humble:
-    source:
-      # real-robot path (older franka_ros2 v0.1.15 needs source-pinned ros2_control):
-      # type: git
-      # url: https://github.com/ros-controls/ros2_control.git
-      # version: 2.45.0
-      # sim path (apt 2.53.1 — works with franka_ros2 v2.1.0):
-      type: system
-      name: ros2-control
-  default:
-    source:
-      type: system
-      name: ros2-control
+  source:
+    type: system
+    name: ros2-control
+  # Previously source-pinned to 2.45.0 to satisfy older franka_ros2 on real
+  # hardware; humble apt now ships >= 2.53.1 on the same release line, which
+  # is ABI-compatible. Source-pinning was also adding ~12 sub-packages to the
+  # colcon build. Reactivate the git override below if a future franka_ros2
+  # version constraint requires it.
+  # humble:
+  #   source:
+  #     type: git
+  #     url: https://github.com/ros-controls/ros2_control.git
+  #     # version: 2.25.0
+  #     version: 2.45.0
