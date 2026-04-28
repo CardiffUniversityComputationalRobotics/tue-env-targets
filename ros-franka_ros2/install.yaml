@@ -5,6 +5,7 @@
     # version: cucr_branch
     # version: ioannis_dev
     url: https://github.com/frankarobotics/franka_ros2.git
-    # version: v0.1.15
-    version: v0.1.9
+    # version: v0.1.15  # real-robot path (last pre-libfranka-bump)
+    version: v2.1.0  # sim path
+    # version: v0.1.9
     # version: humble

@@ -1,12 +1,13 @@
 - type: ros
   humble:
     source:
-      type: git
-      url: https://github.com/ros-controls/ros2_controllers.git
-      # version: 2.25.0 # need older version to work with older franka_ros2 for real robot 
-      version: 2.45.0 # need older version to work with older franka_ros2 for real robot 
-      # type: system
-      # name: ros2-controllers
+      # real-robot path (older franka_ros2 v0.1.15 needs source-pinned ros2_controllers):
+      # type: git
+      # url: https://github.com/ros-controls/ros2_controllers.git
+      # version: 2.45.0
+      # sim path (apt 2.52.1 — vendored JTC was dropped at franka_ros2 v1.0.0, no collision at v2.1.0):
+      type: system
+      name: ros2-controllers
   default:
     source:
       type: system

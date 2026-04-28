@@ -8,8 +8,8 @@
       # change version in install.bash instead
       # version: ioannis_dev # 0.13.3 but with cmake 3.5 min
       url: https://github.com/frankaemika/libfranka.git
-      # version: 0.13.2
-      version: 0.13.2
+      # version: 0.13.2  # real-robot path (FCI v6 server on the lab FR3)
+      version: 0.18.0  # sim path (min for franka_ros2 v2.1.0)
 
       # type: system
       # name: libfranka # i need version 0.13.3 (at most) that works with robot server version 6, so apt won't work
