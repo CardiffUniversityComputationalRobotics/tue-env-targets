@@ -3,4 +3,4 @@
     type: git
     # url: git@github.com:CardiffUniversityComputationalRobotics/fsa2.git
     url: git@github.com:ioannismarios/fsa2_vc.git
-    sub-dir: fsa2_simulation
+    sub-dir: fsa2_fr3
