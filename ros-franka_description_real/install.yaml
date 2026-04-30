@@ -1,0 +1,25 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      # Real selector: upstream tag 0.4.0 paired with franka_ros2 v0.1.15
+      # and libfranka 0.13.2 (FCI server v6 path). The gripper-fix patches
+      # carried on the CUCR ioannis_dev branch are NOT needed in the real
+      # path — the real-robot stack uses franka_hardware (not the Gazebo
+      # plugin) and franka_hand_action_server provides /fr3_gripper/grasp
+      # and /fr3_gripper/move directly, bypassing the URDF mimic problem
+      # entirely.
+      url: https://github.com/frankarobotics/franka_description.git
+      version: 0.4.0
+  default:
+    source:
+      type: system
+      name: franka-description
+
+# Parallel selector for sim/real. Installing this resets the
+# franka_description checkout to upstream tag 0.4.0. To switch back to
+# sim, run `cucr-get install ros-franka_description_sim` (resets to
+# CUCR ioannis_dev fork branch). `cucr-get update` re-pins the original
+# `ros-franka_description` target — silently swaps back to sim's
+# CUCR fork. Re-install this selector after update if you intend to
+# stay in real mode.

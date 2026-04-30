@@ -1,0 +1,21 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: https://github.com/frankaemika/libfranka.git
+      # Sim selector: paired with franka_ros2 v2.1.0, which requires
+      # libfranka >= 0.18.0. 0.18.0 ships its own package.xml and is
+      # built by colcon as a workspace package.
+      version: 0.18.0
+  default:
+    source:
+      type: system
+      name: libfranka
+
+# Parallel selector for sim/real. Installing this overwrites the source
+# checkout to v0.18.0. To switch to real-mode, run
+# `cucr-get install ros-libfranka_real` (overwrites to v0.13.2 via the
+# manual cmake+cpack+dpkg flow). `cucr-get update` re-pins the original
+# `ros-libfranka` target to whatever it says (currently sim mirror), so
+# running update silently undoes a real-mode swap — re-install the
+# `_real` selectors after update if you intend to stay in real mode.

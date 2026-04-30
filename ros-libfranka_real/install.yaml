@@ -1,0 +1,13 @@
+# Real selector for libfranka v0.13.2 (FCI server v6 caps libfranka at
+# 0.13.x). v0.13.x has no package.xml so colcon cannot build it as a
+# workspace package — install.bash does the manual cmake+cpack+dpkg
+# flow that produces a system .deb. The yaml below registers the dep
+# as `system, name: libfranka` so tue-env's resolver is satisfied; the
+# actual install work is in install.bash.
+
+- type: system
+  name: libfranka
+
+# Caveat: `cucr-get update` will re-pin the original `ros-libfranka`
+# target (currently the sim mirror at 0.18.0). After running update,
+# re-install this selector if you intend to stay in real mode.

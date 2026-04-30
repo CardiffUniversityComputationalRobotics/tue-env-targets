@@ -1,0 +1,31 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      # Sim selector: CUCR fork on branch ioannis_dev (based on upstream
+      # tag 1.4.0). The branch carries permanent gripper-fix patches that
+      # cannot live in the upstream checkout (cucr-get update would
+      # discard them on every reinstall):
+      #   - franka_hand.xacro: comment out the <mimic> on finger_joint2
+      #     (gz_ros2_control on Humble's Fortress doesn't honour mimic;
+      #     bullet-featherstone engine isn't shipped on Humble).
+      #   - franka_arm.ros2_control.xacro: declare both fingers explicitly
+      #     in the ros2_control block so MoveIt + JTC drive both in
+      #     synchronised trajectories. Effort *command* interface omitted
+      #     to avoid a startup OOB read in the plugin; effort *state*
+      #     interface stays.
+      #   - franka_hand.srdf.xacro: change finger_joint2 from passive_joint
+      #     to joint so MoveIt plans both fingers.
+      url: git@github.com:CardiffUniversityComputationalRobotics/franka_description.git
+      version: ioannis_dev
+  default:
+    source:
+      type: system
+      name: franka-description
+
+# Parallel selector for sim/real. Installing this resets the
+# franka_description checkout to the CUCR ioannis_dev fork branch.
+# To switch to real-mode, run `cucr-get install ros-franka_description_real`
+# (resets to upstream tag 0.4.0). `cucr-get update` re-pins the original
+# `ros-franka_description` target — re-install the `_real` selectors
+# after update if you intend to stay in real mode.

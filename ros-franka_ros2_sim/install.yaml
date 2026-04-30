@@ -1,0 +1,19 @@
+- type: ros
+  source:
+    type: git
+    url: https://github.com/frankarobotics/franka_ros2.git
+    # Sim selector: v2.1.0 paired with libfranka 0.18.0 and franka_description
+    # CUCR fork (ioannis_dev branch). v2.1.0 chosen as the last tag without
+    # breaking changes affecting fsa2 (v2.2.0 renamed arm_id → robot_type).
+    # The gripper-fix patches in franka_description are still needed at
+    # v2.1.0 (mimic-disable + both-fingers-in-ros2_control + JointModelGroup
+    # exposure of finger_joint2). See PROGRESS.md "Gripper-in-sim working
+    # configuration" milestone.
+    version: v2.1.0
+
+# Parallel selector for sim/real. Installing this overwrites the
+# franka_ros2 source checkout to v2.1.0. To switch to real-mode, run
+# `cucr-get install ros-franka_ros2_real` (overwrites to v0.1.15).
+# `cucr-get update` re-pins the original `ros-franka_ros2` target to
+# whatever it says (currently sim mirror) — re-install the `_real`
+# selectors after update if you intend to stay in real mode.

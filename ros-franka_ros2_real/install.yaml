@@ -1,0 +1,15 @@
+- type: ros
+  source:
+    type: git
+    url: https://github.com/frankarobotics/franka_ros2.git
+    # Real selector: v0.1.15 is the last franka_ros2 tag compatible with
+    # libfranka 0.13.x (FCI server v6 cap on the physical FR3). Pairs
+    # with libfranka 0.13.2 and franka_description upstream tag 0.4.0.
+    version: v0.1.15
+
+# Parallel selector for sim/real. Installing this overwrites the
+# franka_ros2 source checkout to v0.1.15. To switch back to sim, run
+# `cucr-get install ros-franka_ros2_sim` (overwrites to v2.1.0).
+# `cucr-get update` re-pins the original `ros-franka_ros2` target —
+# silently swaps back to sim. Re-install this selector after update
+# if you intend to stay in real mode.
