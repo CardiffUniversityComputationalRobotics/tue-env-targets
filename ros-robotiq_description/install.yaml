@@ -3,4 +3,13 @@
     type: git
     url: https://github.com/PickNikRobotics/ros2_robotiq_gripper.git
     sub-dir: robotiq_description
-    version: humble
+    # Pinned to the last pre-rename commit on humble. Upstream commit 93ecde7
+    # renamed `fake_sensor_commands` → `mock_sensor_commands`, but
+    # kortex_description's load_gripper macro on its current humble HEAD still
+    # passes `fake_sensor_commands` — so a post-rename robotiq_description
+    # breaks fsa2_gen3's URDF generation. Revisit at the Phase 5.5 version-pin
+    # lockdown (track upstream kortex_description; if it also adopts mock_*,
+    # bump this pin to a newer commit). Original `version: humble` is preserved
+    # in the comment below for restoration after lockdown.
+    # version: humble
+    version: 1ec8f2a
