@@ -4,7 +4,7 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/cucr_worlds.git
       sub-dir: cucr_worlds_office
-      version: humble
+      version: gz_humble
   default:
     source:
       type: git
