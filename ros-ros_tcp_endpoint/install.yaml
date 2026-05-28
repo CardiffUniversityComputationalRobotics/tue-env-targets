@@ -6,6 +6,12 @@
         version: main-ros2
         # url: git@github.com:CardiffUniversityComputationalRobotics/ROS-TCP-Endpoint.git
         # version: delay
+  jazzy:
+    # main-ros2 is distro-agnostic (Unity-maintained, not in rosdistro) — same branch serves humble + jazzy.
+    source:
+        type: git
+        url: git@github.com:Unity-Technologies/ROS-TCP-Endpoint.git
+        version: main-ros2
   default:
     source:
         type: git

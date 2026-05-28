@@ -3,6 +3,14 @@
     source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/apriltag_ros.git
+  jazzy:
+    # TODO(jazzy): verify the CUCR fork builds on jazzy. rosdistro jazzy ships
+    # apriltag_ros 3.4.0 (source christianrauch/apriltag_ros@master; apt
+    # ros-jazzy-apriltag-ros) — switch to upstream/binary if the fork's changes
+    # (delay injection etc.) aren't needed on jazzy.
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/apriltag_ros.git
   default:
     source:
         type: git
