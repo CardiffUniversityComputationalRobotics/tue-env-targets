@@ -5,6 +5,12 @@
       type: git
       url: https://github.com/PickNikRobotics/rosparam_shortcuts.git
       version: ros2
+  jazzy:
+    source:
+      # no ros-jazzy-rosparam-shortcuts apt package; build from source
+      type: git
+      url: https://github.com/PickNikRobotics/rosparam_shortcuts.git
+      version: ros2
   default:
     source:
       type: system

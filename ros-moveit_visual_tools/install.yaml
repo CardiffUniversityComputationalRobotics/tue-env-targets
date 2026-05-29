@@ -6,6 +6,10 @@
       # version: ros2
       type: system
       name: moveit-visual-tools
+  jazzy:
+    source:
+      type: system
+      name: moveit-visual-tools
   default:
     source:
       type: git

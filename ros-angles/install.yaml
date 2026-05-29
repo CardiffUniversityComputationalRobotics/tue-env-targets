@@ -3,6 +3,10 @@
     source:
       type: system
       name: angles
+  jazzy:
+    source:
+      type: system
+      name: angles
   default:
     source:
       type: system

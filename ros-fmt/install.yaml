@@ -3,5 +3,7 @@
 #     type: git
 #     url: git@github.com:fmtlib/fmt.git
 
+# libfmt-dev provides the headers source builds (behaviortree) need and exists on
+# both jammy (8.1.1) and noble (9.1.0); libfmt8 was the runtime-only lib + jammy-only name.
 - type: system
-  name: libfmt8
+  name: libfmt-dev

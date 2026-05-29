@@ -1,2 +1,6 @@
-- type: system
-  name: ros-environment
+# ros_environment is a ROS package; resolve it as ros-<distro>-ros-environment
+# (bare 'ros-environment' has no apt candidate on noble/jazzy).
+- type: ros
+  source:
+    type: system
+    name: ros-environment
