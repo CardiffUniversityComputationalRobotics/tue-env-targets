@@ -1,0 +1,18 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:ioannismarios/iris_husky.git
+      sub-dir: robots/uolx01_description
+      version: main
+  jazzy:
+    source:
+      type: git
+      url: git@github.com:ioannismarios/iris_husky.git
+      sub-dir: robots/uolx01_description
+      version: jazzy
+  default:
+    source:
+      type: git
+      url: git@github.com:ioannismarios/iris_husky.git
+      sub-dir: robots/uolx01_description

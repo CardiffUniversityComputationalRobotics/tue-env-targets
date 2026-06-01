@@ -1,5 +1,10 @@
 - type: ros
-  source:
+  jazzy:
+    source:
+      type: system
+      name: ompl
+  default:
+    source:
       type: git
       url: git@github.com:ompl/ompl.git
       version: tags/1.5.0

@@ -1,5 +1,10 @@
 - type: ros
-  source:
+  jazzy:
+    source:
+      type: system
+      name: moveit-msgs
+  default:
+    source:
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/moveit_msgs.git
       version: noetic-devel-agr

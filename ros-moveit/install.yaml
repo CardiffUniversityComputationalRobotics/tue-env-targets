@@ -3,6 +3,10 @@
     source:
       type: system
       name: moveit
+  jazzy:
+    source:
+      type: system
+      name: moveit
   default:
     source:
       type: git
