@@ -1,0 +1,16 @@
+- type: ros
+  humble:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/gazebo_link_attacher.git
+      version: humble
+  jazzy:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/gazebo_link_attacher.git
+      version: jazzy
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/gazebo_link_attacher.git
+      version: humble
