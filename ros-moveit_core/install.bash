@@ -1,4 +1,4 @@
-if [ "$ROS_DISTRO" = "humble" ]; then 
+if [ "$ROS_DISTRO" = "humble" ] || [ "$ROS_DISTRO" = "jazzy" ]; then 
 
     :
 
