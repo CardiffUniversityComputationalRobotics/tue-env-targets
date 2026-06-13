@@ -1,10 +1,11 @@
 # EfficientSAM (yformer/EfficientSAM) — default promptable segmenter for iris
-# perception Stage 1. Depends on torch; the package has setup.py so it is
-# pip-installable from git. The bundled checkpoints (weights/efficient_sam_vitt.pt
-# direct, weights/efficient_sam_vits.pt zipped) are NOT shipped by pip — install.bash
+# perception Stage 1. The package has setup.py so it is pip-installable from git.
+# Its install_requires is EMPTY, so this does NOT touch torch — it uses the
+# workspace's existing torch (do NOT add python3-pytorch-pip here; that target
+# pins torch 1.10.2 and would downgrade the venv). torch/torchvision are a runtime
+# requirement assumed present in the ros-jazzy venv.
+# The bundled checkpoints (weights/efficient_sam_vitt.pt direct,
+# weights/efficient_sam_vits.pt zipped) are NOT shipped by pip — install.bash
 # fetches + unzips them and exports EFFICIENT_SAM_ROOT for the loader.
-- type: target
-  name: python3-pytorch-pip
-
 - type: pip
   name: git+https://github.com/yformer/EfficientSAM.git
