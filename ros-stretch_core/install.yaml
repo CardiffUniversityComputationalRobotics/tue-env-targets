@@ -10,7 +10,7 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/stretch_ros2.git
       sub-dir: stretch_core
-      version: humble
+      version: gz-humble
   default:
     source:
       type: git
