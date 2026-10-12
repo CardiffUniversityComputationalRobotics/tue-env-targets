@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# if [[ "$ROS_DISTRO" == "humble" ]]; then
-if [ ! -d ~/libfranka/ ]; then
+if [[ "$CUCR_ROS_DISTRO" != "humble" ]]; then
+    # Jazzy+: libfranka is built from source in the workspace (see install.yaml), so no
+    # system deb. Upstream franka_ros2 also contains packages (mobile, spine, ZED kit) whose
+    # dependencies are not on apt, hence -r to keep going past them.
+    cd "$CUCR_SYSTEM_DIR"
+    rosdep update --rosdistro "$CUCR_ROS_DISTRO"
+    rosdep install --from-paths src --ignore-src --rosdistro "$CUCR_ROS_DISTRO" -y -r --skip-keys libfranka
+elif [ ! -d ~/libfranka/ ]; then
     # cd ~/ros/humble/repos/github.com/frankaemika/
     cd ~
     sudo apt remove "*libfranka*"
@@ -14,9 +20,9 @@ if [ ! -d ~/libfranka/ ]; then
     cmake --build . -j$(nproc)
     cpack -G DEB
     sudo dpkg -i libfranka-*.deb
-    cd ~/ros/humble/system/
-    rosdep update
-	rosdep install --from-paths src --ignore-src --rosdistro humble -y --skip-keys libfranka
+    cd "$CUCR_SYSTEM_DIR"
+    rosdep update --rosdistro "$CUCR_ROS_DISTRO"
+	rosdep install --from-paths src --ignore-src --rosdistro "$CUCR_ROS_DISTRO" -y --skip-keys libfranka
 fi
 
 

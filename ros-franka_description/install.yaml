@@ -4,6 +4,11 @@
       type: git
       url: https://github.com/CardiffUniversityComputationalRobotics/franka_description.git
       version: cucr_branch
+  jazzy:
+    source:
+      type: git
+      url: https://github.com/frankarobotics/franka_description.git
+      version: 2.9.0
   default:
     source:
       type: system

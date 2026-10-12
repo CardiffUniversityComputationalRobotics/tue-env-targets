@@ -1,4 +1,10 @@
 - type: ros
-  source:
-    type: git
-    url: https://github.com/CardiffUniversityComputationalRobotics/franka_ros2.git
+  jazzy:
+    source:
+      type: git
+      url: https://github.com/CardiffUniversityComputationalRobotics/franka_ros2.git
+      version: cucr_jazzy
+  default:
+    source:
+      type: git
+      url: https://github.com/CardiffUniversityComputationalRobotics/franka_ros2.git

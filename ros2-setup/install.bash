@@ -8,6 +8,21 @@ rosrepourl="http://packages.ros.org/${rosrepo}/ubuntu $(lsb_release -sc) main"
 sourcefile=/etc/apt/sources.list.d/ros2.list
 sourceurl="deb [signed-by=${keyfile}] ${rosrepourl}"
 
+# Newer installs configure the ROS 2 repo through the official ros2-apt-source package
+# (deb822 ros2.sources with an embedded key). A second ros2.list entry with a different
+# Signed-By makes apt refuse to read the sources, so defer to ros2.sources when present.
+if [[ -e /etc/apt/sources.list.d/ros2.sources ]]
+then
+    cucr-install-debug "ROS2 sources are managed by ros2-apt-source"
+    if [[ -f "${sourcefile}" ]]
+    then
+        cucr-install-debug "Removing conflicting ${sourcefile}"
+        sudo rm -f "${sourcefile}"
+        cucr-install-apt-get-update
+    fi
+    return 0
+fi
+
 ADD_ROS_SOURCES=false
 ADD_ROS_GPG_KEY=false
 FORCE_UPDATE=false

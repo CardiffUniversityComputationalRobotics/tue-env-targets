@@ -3,6 +3,10 @@
     source:
       type: system
       name: srdfdom
+  jazzy:
+    source:
+      type: system
+      name: srdfdom
   default:
     source:
       type: git

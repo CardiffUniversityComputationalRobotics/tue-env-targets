@@ -16,6 +16,12 @@ if [ "$ROS_DISTRO" == "noetic" ]; then
 		export QT_QPA_PLATFORM_PLUGIN_PATH=$COPPELIASIM_ROOT
 	fi
 
+	if [ ! -d ~/PyRep/ ]; then
+		pip3 install -r requirements.txt
+		source ~/.bashrc
+		pip3 install .
+	fi
+
 else
 
 	# setup needed for gazebo ignition
@@ -23,13 +29,7 @@ else
 
 		echo "
 # setup needed for gazebo ignition
-export GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH}:~/ros/humble/system/src/:~/.ignition/models/" >>~/.bashrc
+export GZ_SIM_RESOURCE_PATH=\${GZ_SIM_RESOURCE_PATH}:${CUCR_SYSTEM_DIR}/src/:~/.ignition/models/" >>~/.bashrc
 	fi
 
-fi
-
-if [ ! -d ~/PyRep/ ]
-	pip3 install -r requirements.txt
-	source ~/.bashrc
-	pip3 install .
 fi
