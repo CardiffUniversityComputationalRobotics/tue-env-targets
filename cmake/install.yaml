@@ -1,2 +1,13 @@
+# Noble (Jazzy): use the distro CMake (3.28) that ROS 2 Jazzy is built and tested with;
+# the latest pip CMake (4.x) shadows it inside the venv and rejects older CMake code.
 - type: pip
-  name: cmake
+  noble:
+    name:
+  default:
+    name: cmake
+
+- type: system
+  noble:
+    name: cmake
+  default:
+    name:
