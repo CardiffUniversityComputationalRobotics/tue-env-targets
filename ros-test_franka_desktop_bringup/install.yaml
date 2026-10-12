@@ -6,12 +6,9 @@
       sub-dir: tests_franka/test_franka_desktop_bringup
       version: humble
       # version: ros2-franka
+  # not used on jazzy (RViz starts with test_franka_simulation_bringup)
   jazzy:
     source:
-      type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_robots_tests.git
-      sub-dir: tests_franka/test_franka_desktop_bringup
-      version: jazzy
   default:
     source:
       type: git
