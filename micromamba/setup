@@ -1,0 +1,15 @@
+#! /usr/bin/env bash
+
+if [[ :$PATH: != *:${HOME}/.local/bin:* ]]
+then
+    export PATH=${HOME}/.local/bin${PATH:+:${PATH}}
+fi
+
+# Shared by all CUCR tool environments (see micromamba/create_env.bash)
+export MAMBA_ROOT_PREFIX=${MAMBA_ROOT_PREFIX:-${HOME}/micromamba}
+
+# 'micromamba activate <env>' in interactive shells; tools themselves use 'micromamba run -n <env>'
+if [[ $- == *i* ]] && command -v micromamba &>/dev/null
+then
+    eval "$(micromamba shell hook --shell bash)"
+fi
