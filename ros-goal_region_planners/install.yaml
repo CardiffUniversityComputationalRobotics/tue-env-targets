@@ -1,0 +1,11 @@
+- type: ros
+  jazzy:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/goalregion_planners.git
+      version: main
+  default:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/goalregion_planners.git
+      version: main
