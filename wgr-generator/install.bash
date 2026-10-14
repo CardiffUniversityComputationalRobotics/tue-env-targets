@@ -1,16 +1,16 @@
 #! /usr/bin/env bash
 
 # Python side of the goal-region pipeline (segmentation, grasp transformation, adaptive goal regions, visualisation):
-# ~/dev/WgrGenerator, the micromamba environment 'wgr-generator' and the SAM2 checkpoint in ~/dev/models/sam2.
+# ~/dev/wgr_generator, the micromamba environment 'wgr-generator' and the SAM2 checkpoint in ~/dev/models/sam2.
 
-repo_dir="${HOME}/dev/WgrGenerator"
+repo_dir="${HOME}/dev/wgr_generator"
 env_name="wgr-generator"
 sam2_commit="2b90b9f5ceec907a1c18123530e92e794ad901a4"
 checkpoint="${HOME}/dev/models/sam2/sam2.1_hiera_base_plus.pt"
 checkpoint_url="https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_base_plus.pt"
 checkpoint_sha256="a2345aede8715ab1d5d31b4a509fb160c5a4af1970f199d9054ccfb746c004c5"
 
-cucr-install-git git@github.com:CardiffUniversityComputationalRobotics/WgrGenerator.git --target-dir="${repo_dir}" --version=main
+cucr-install-git git@github.com:CardiffUniversityComputationalRobotics/wgr_generator.git --target-dir="${repo_dir}" --version=main
 
 export MAMBA_ROOT_PREFIX=${MAMBA_ROOT_PREFIX:-${HOME}/micromamba}
 micromamba_bin=$(command -v micromamba || echo "${HOME}/.local/bin/micromamba")
@@ -29,7 +29,9 @@ then
 fi
 
 # wgr_generator itself, editable (changes in the repository are used without reinstalling); provides wgr-* commands
-if ! "${pip_in_env[@]}" show wgr_generator &>/dev/null
+installed_dir=$("${micromamba_bin}" run -n "${env_name}" python -c \
+    "import os, wgr_generator; print(os.path.dirname(os.path.dirname(os.path.abspath(wgr_generator.__file__))))" 2>/dev/null)
+if [[ "${installed_dir}" != "${repo_dir}" ]]
 then
     cucr-install-info "Installing wgr_generator (editable) in '${env_name}'"
     "${pip_in_env[@]}" install --no-deps -e "${repo_dir}" || \
