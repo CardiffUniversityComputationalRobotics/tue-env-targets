@@ -29,12 +29,29 @@ env_dir="${MAMBA_ROOT_PREFIX}/envs/${env_name}"
 stamp="${env_dir}/.cucr-env-file.sha256"
 checksum=$(sha256sum "${env_file}" | cut -d ' ' -f 1)
 
+# The sourced ROS workspace puts its Python packages (another Python version) on PYTHONPATH; keep them out of the
+# environment. Restored when the environment is deactivated.
+isolate_python()
+{
+    mkdir -p "${env_dir}/etc/conda/activate.d" "${env_dir}/etc/conda/deactivate.d"
+    cat > "${env_dir}/etc/conda/activate.d/cucr-isolate-python.sh" <<'EOF'
+if [ -n "${PYTHONPATH+x}" ]; then export CUCR_SAVED_PYTHONPATH="${PYTHONPATH}"; fi
+unset PYTHONPATH
+EOF
+    cat > "${env_dir}/etc/conda/deactivate.d/cucr-isolate-python.sh" <<'EOF'
+if [ -n "${CUCR_SAVED_PYTHONPATH+x}" ]; then export PYTHONPATH="${CUCR_SAVED_PYTHONPATH}"; unset CUCR_SAVED_PYTHONPATH; fi
+EOF
+}
+
 if [[ -f "${stamp}" ]] && [[ "$(cat "${stamp}")" == "${checksum}" ]]
 then
+    isolate_python
     echo "[micromamba] Environment '${env_name}' is up to date"
     exit 0
 fi
 
 echo "[micromamba] Creating environment '${env_name}' from ${env_file}"
-"${micromamba_bin}" create --yes --name "${env_name}" --file "${env_file}"
+# Without PYTHONPATH, so pip in the new environment does not see the packages of the ROS workspace
+env -u PYTHONPATH "${micromamba_bin}" create --yes --name "${env_name}" --file "${env_file}"
+isolate_python
 echo "${checksum}" > "${stamp}"
