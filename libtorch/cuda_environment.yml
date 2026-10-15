@@ -1,0 +1,16 @@
+# CUDA 12.4 toolkit pieces that libtorch's CMake config (Caffe2) looks for when a package links libtorch with CUDA;
+# nothing of CUDA is installed into the system. Used by the cucr-env target `libtorch`.
+name: cuda-12-4
+channels:
+  - conda-forge
+dependencies:
+  - cuda-version=12.4
+  - cuda-nvcc
+  - cuda-cudart-dev
+  - cuda-nvrtc-dev
+  - cuda-nvtx-dev
+  - libcublas-dev
+  - libcufft-dev
+  - libcurand-dev
+  - libcusolver-dev
+  - libcusparse-dev

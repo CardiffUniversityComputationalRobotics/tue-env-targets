@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+# libtorch for CMake (find_package(Torch)) and the CUDA toolkit pieces of the 'cuda-12-4' micromamba environment for
+# libtorch's CMake config (see ./install.bash)
+if [ -d "${HOME}/dev/libtorch/share/cmake/Torch" ]
+then
+    export Torch_DIR="${HOME}/dev/libtorch/share/cmake/Torch"
+    _cuda_env="${MAMBA_ROOT_PREFIX:-${HOME}/micromamba}/envs/cuda-12-4"
+    if [ -d "${_cuda_env}" ]
+    then
+        # FindCUDA (Torch) and FindCUDAToolkit both look at CUDA_PATH
+        export CUDA_PATH="${_cuda_env}"
+        # conda keeps the CUDA headers under targets/
+        export CUDA_INC_PATH="${_cuda_env}/targets/x86_64-linux"
+    fi
+    unset _cuda_env
+fi

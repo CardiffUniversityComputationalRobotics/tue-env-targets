@@ -9,3 +9,5 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/goalregion_planners.git
       version: main
+- type: target
+  name: libtorch
