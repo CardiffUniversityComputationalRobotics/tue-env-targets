@@ -1,9 +1,13 @@
 - type: ros
   humble:
-    source: 
+    source:
+      type: system
+      name: common-interfaces
+  jazzy:
+    source:
       type: system
       name: common-interfaces
   default:
-    source: 
+    source:
       type: system
       name: common-msgs

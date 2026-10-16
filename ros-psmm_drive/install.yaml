@@ -4,6 +4,11 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/psmm_drive.git
       version: humble-devel
+  jazzy:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/psmm_drive.git
+      version: humble-devel
   default:
     source:
       type: git

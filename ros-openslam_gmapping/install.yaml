@@ -5,6 +5,12 @@
       url: git@github.com:CardiffUniversityComputationalRobotics/slam_gmapping.git
       version: humble-devel
       sub-dir: openslam_gmapping
+  jazzy:
+    source:
+      type: git
+      url: git@github.com:CardiffUniversityComputationalRobotics/slam_gmapping.git
+      version: humble-devel
+      sub-dir: openslam_gmapping
   default:
     source:
       type: system
