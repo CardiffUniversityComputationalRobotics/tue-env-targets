@@ -10,9 +10,8 @@
       type: git
       url: git@github.com:CardiffUniversityComputationalRobotics/stretch_ros2.git
       sub-dir: stretch_gz_sim
-      version: gz-humble
+      version: jazzy
   default:
     source:
       type: git
-      url: git@github.com:CardiffUniversityComputationalRobotics/cucr_stretch_ros2.git
-      sub-dir: stretch_gz_sim
+      url: git@github.com:CardiffUniversityComputationalRobotics/stretch_ros2.git
